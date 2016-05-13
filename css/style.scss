@@ -67,8 +67,8 @@ img{
     position: absolute;
     border-radius: 50px;
     border: 0px solid #FFC000;
-    left: 100px;
-    top: 650px;
+    left: -39px;
+    top: 614px;
     
 }
 .planet--back:before{
@@ -1051,6 +1051,14 @@ img{
 }
 /******************************************************************************/
 @media (max-width: 360px){
+.artboard{
+    width: 360px;
+    height: 679px;
+   
+}
+.clouds{
+    display: none;
+}
 .astro{
     transform: scale(1);
 }
@@ -1060,7 +1068,7 @@ img{
     position: absolute;
     /*background: pink;*/
     top: 38%;
-    left: 22%;
+    left: 57%;
     
 }
 .vialactea{
@@ -1115,5 +1123,24 @@ img{
     left: -471px;
     transform: rotate(3deg);
     transform: scale(0.9);
+}
+.star-all{
+    display: none;
+}
+}
+@media (max-width: 320px){
+.artboard{
+    width: 320px;
+    height: 679px;
+   
+}
+.astronauta{
+    width: 100px;
+    height: 203px;
+    position: absolute;
+    /*background: pink;*/
+    top: 38%;
+    left: 61%;
+    
 }
 }

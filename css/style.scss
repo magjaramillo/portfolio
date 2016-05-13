@@ -551,20 +551,76 @@ img{
     width: 87px;
     height: 87px;
     border-radius: 10px;
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
     
 }
 img{
     width: 116px;
-    transform: rotate(-45deg);
+    transform: rotate(45deg);
     position: absolute;
     left: -14px;
     top: -20px;
-
+}
+.astronauta{
+    width: 100px;
+    height: 203px;
+    top: 33%;
+    left: 43%;
 }
 
+.saturn--planet{
+    widw: hidden;
+    top: 31px;
+    left: 87px;
+    transform: scale(1.3);
+}
+.saturn--card{
+    top: 194px;
+    left: 99px;
+    transition: all 0.4s;
+    transform: scale(1);
+}
+.pluton--planet{
+    top: -115px;
+    left: 0px;
+    transform: scale(1);
+    
+}
+.pluton--card{
+    top: 51px;
+    left: 2px;
+    transition: all 0.4s;
+    transform: scale(1);
+}
+.pluton--moon{
+    top: -166px;
+    left: 102px;
+    transform: scale(1);
+}
+.marte--planet{
+    top: 13px;
+    left: -52px;
+    transform: rotate(0deg);
+    transform: scale(1.2);
+    
+}
+.marte--card{
+    top: 162px;
+    left: -45px;
+    transition: all 0.4s;
+    transform: scale(1);
+    
+}
+.marte--planet-shadow{
+    top: 63px;
+    left: -71px;
+    transform: rotate(3deg);
+    transform: scale(1.2);
 }
 
+
+}
+/**************************************************************/
 @media (max-width: 1000px){
 .perfil{
     width: 95px;
@@ -581,17 +637,79 @@ img{
     top: -20px;
 
 }
-.astro{
-    transform: scale(0.8);
-}
-.vialactea{
-    left: 200px;
-    top: 150px;
-}
+.astronauta{
+    width: 100px;
+    height: 203px;
+    top: 33%;
+    left: 43%;
 }
 
+.saturn--planet{
+    widw: hidden;
+    top: 52px;
+    left: 116px;
+    transform: scale(1.3);
+}
+.saturn--card{
+    top: 210px;
+    left: 128px;
+    transition: all 0.4s;
+    transform: scale(1);
+}
+.pluton--planet{
+    top: -115px;
+    left: 0px;
+    transform: scale(1);
+    
+}
+.pluton--card{
+    top: 46px;
+    left: 2px;
+    transition: all 0.4s;
+    transform: scale(1);
+}
+.pluton--moon{
+    top: -166px;
+    left: 0px;
+    transform: scale(1);
+}
+.marte--planet{
+    top: 35px;
+    left: -85px;
+    transform: rotate(0deg);
+    transform: scale(1.2);
+    
+}
+.marte--card{
+    top: 188px;
+    left: -75px;
+    transition: all 0.4s;
+    transform: scale(1);
+    
+}
+.marte--planet-shadow{
+    top: 85px;
+    left: -105px;
+    transform: rotate(3deg);
+    transform: scale(1.2);
+}
+}
+/*********************************************************************/
 @media (max-width: 880px){
-
+.perfil{
+    width: 87px;
+    height: 87px;
+    border-radius: 10px;
+    transform: rotate(45deg);
+    
+}
+img{
+    width: 116px;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: -14px;
+    top: -20px;
+}
 .astro{
     transform: scale(0.8);
 }
@@ -599,64 +717,72 @@ img{
     left: 450px;
     top: 100px;
 }
+.astronauta{
+    width: 100px;
+    height: 203px;
+    top: 33%;
+    left: 43%;
+}
+
 .saturn--planet{
     widw: hidden;
-    top: 0px;
-    left: 0px;
-    transform: scale(1);
+    top: -5px;
+    left: 101px;
+    transform: scale(1.3);
 }
 .saturn--card{
-    top: 161px;
-    left: 9px;
+    top: 157px;
+    left: 113px;
     transition: all 0.4s;
-    transform: scale(1.5);
+    transform: scale(1);
 }
 .pluton--planet{
-    top: -17px;
+    top: -115px;
     left: 0px;
     transform: scale(1);
     
 }
 .pluton--card{
-    top: 155px;
+    top: 46px;
     left: 2px;
     transition: all 0.4s;
-    transform: scale(1.5);
+    transform: scale(1);
 }
 .pluton--moon{
-    top: -75px;
-    left: 102px;
+    top: -166px;
+    left: 0px;
     transform: scale(1);
 }
 .marte--planet{
-    top: 0px;
-    left: 0px;
+    top: -15px;
+    left: -85px;
     transform: rotate(0deg);
-    transform: scale(1);
+    transform: scale(1.2);
     
 }
 .marte--card{
-    top: 148px;
-    left: 9px;
+    top: 141px;
+    left: -76px;
     transition: all 0.4s;
+    transform: scale(1);
     
 }
 .marte--planet-shadow{
-    top: 52px;
-    left: -23px;
+    top: 37px;
+    left: -105px;
     transform: rotate(3deg);
     transform: scale(1.2);
 }
 }
 
-
+/**********************************************************************/
 @media (max-width: 800px){
 .perfil{
     width: 95px;
     height: 95px;
     border-radius: 50%;
     border: 2px solid white;
-    transform: rotate(0deg);
+    transform: rotate(45deg);
   
 }
 .astro{
@@ -666,56 +792,64 @@ img{
     left: 400px;
     top: 100px;
 }
+.astronauta{
+    width: 100px;
+    height: 203px;
+    top: 33%;
+    left: 43%;
+}
+
 .saturn--planet{
-    top: 16px;
-    left: 76px;
-    transform: rotate(-21deg);
+    widw: hidden;
+    top: 81px;
+    left: 135px;
     transform: scale(1);
 }
 .saturn--card{
-    top: 161px;
-    left: 85px;
+    top: 227px;
+    left: 147px;
+    transition: all 0.4s;
     transform: scale(1);
 }
-
 .pluton--planet{
-    
-    top: -56px;
+    top: -115px;
     left: 0px;
     transform: scale(1);
     
 }
 .pluton--card{
-    top: 109px;
+    top: 46px;
     left: 2px;
     transition: all 0.4s;
     transform: scale(1);
 }
 .pluton--moon{
-    top: -114px;
-    left: -20px;
+    top: -166px;
+    left: 0px;
     transform: scale(1);
 }
 .marte--planet{
-    top: -6px;
-    left: -62px;
+    top: 70px;
+    left: -100px;
     transform: rotate(0deg);
     transform: scale(1);
     
 }
 .marte--card{
-    top: 129px;
-    left: -53px;
+    top: 216px;
+    left: -92px;
     transition: all 0.4s;
     transform: scale(1);
+    
 }
 .marte--planet-shadow{
-    top: 46px;
-    left: -80px;
+    top: 122px;
+    left: -118px;
     transform: rotate(3deg);
     transform: scale(1.2);
 }
 }
+/******************************************************************/
 @media (max-width: 740px){
 .astro{
     transform: scale(1);
@@ -726,56 +860,64 @@ img{
     top: 136px;
     transform: scale(0.5);
 }
+.astronauta{
+    width: 100px;
+    height: 203px;
+    top: 33%;
+    left: 43%;
+}
+
 .saturn--planet{
-    top: 16px;
-    left: 57px;
-    transform: rotate(-21deg);
+    widw: hidden;
+    top: 81px;
+    left: 135px;
     transform: scale(1);
 }
 .saturn--card{
-    top: 161px;
-    left: 68px;
+    top: 227px;
+    left: 147px;
+    transition: all 0.4s;
     transform: scale(1);
 }
-
 .pluton--planet{
-    top: -56px;
-    left: -33px;
+    top: -115px;
+    left: 0px;
     transform: scale(1);
     
 }
 .pluton--card{
-    top: 109px;
-    left: -37px;
+    top: 46px;
+    left: 2px;
     transition: all 0.4s;
     transform: scale(1);
 }
 .pluton--moon{
-    top: -114px;
-    left: -44px;
+    top: -166px;
+    left: 0px;
     transform: scale(1);
 }
 .marte--planet{
-    top: -6px;
-    left: -116px;
+    top: 70px;
+    left: -100px;
     transform: rotate(0deg);
     transform: scale(1);
     
 }
 .marte--card{
-    top: 129px;
-    left: -112px;
+    top: 216px;
+    left: -92px;
     transition: all 0.4s;
     transform: scale(1);
+    
 }
 .marte--planet-shadow{
-    top: 46px;
-    left: -134px;
+    top: 122px;
+    left: -118px;
     transform: rotate(3deg);
     transform: scale(1.2);
 }
 }
-
+/***************************************************************************/
 @media (max-width: 680px){
 .astro{
     transform: scale(1);
@@ -841,7 +983,7 @@ img{
     transform: scale(1.2);
 }
 }
-
+/**********************************************************************/
 @media (max-width: 414px){
 .astro{
     transform: scale(1);
@@ -907,7 +1049,8 @@ img{
     transform: scale(0.9);
 }
 }
-@media (max-width: 320px){
+/******************************************************************************/
+@media (max-width: 360px){
 .astro{
     transform: scale(1);
 }
@@ -955,20 +1098,20 @@ img{
     transform: scale(1);
 }
 .marte--planet{
-    top: 462px;
+    top: 411px;
     left: -447px;
     transform: rotate(0deg);
     transform: scale(1);
     
 }
 .marte--card{
-    top: 602px;
+    top: 553px;
     left: -439px;
     transition: all 0.4s;
     transform: scale(1);
 }
 .marte--planet-shadow{
-    top: 514px;
+    top: 466px;
     left: -471px;
     transform: rotate(3deg);
     transform: scale(0.9);

@@ -1,0 +1,976 @@
+@import "head";
+@import "astronauta";
+@import "planets";
+@import "vialactea";
+/*variables   signo $ mas nombre que le damos a la variable y luego el valor de la variable*/
+$bg:#000321;
+$margin:2em;
+
+*{
+    box-sizing: border-box;
+    color: white;
+    /*border: 1px solid white;*/
+}
+body{
+    background:$bg; 
+    font-family: 'Alegreya SC', serif;
+    /*font-weight: bold;*/
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-family:game,arial;
+    color: #067E86;
+    font-weight: lighter;
+    font-size: 24px;
+}
+.perfil{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 0 auto; 
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease;
+}
+img{
+    width: 99px;
+    transition: all 0.5s ease;
+
+}
+
+.footer{
+    width: 100%;
+    height: 1px;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+.footer:before{
+    content: "";
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    height: 2px;
+    box-shadow: 0px -58px 119px rgba(0,250,256,0.9);
+    left: 0px;
+}
+.planet--back{
+    width: 250px;
+    height: 40px;
+    background: #171A3C;
+    position: absolute;
+    border-radius: 50px;
+    border: 0px solid #FFC000;
+    left: 100px;
+    top: 650px;
+    
+}
+.planet--back:before{
+    content:"";
+    width: 250px;
+    height: 40px;
+    background: #171A3C;
+    position: absolute;
+    border-radius: 50px;
+    border: 0px solid #FFC000;
+    left: 50px;
+    top: 30px;
+}
+.planet--back:after{
+    content:"";
+    width: 250px;
+    height: 40px;
+    background: #171A3C;
+    position: absolute;
+    border-radius: 50px;
+    border: 0px solid #FFC000;
+    left: 107px;
+    top: -29px;
+}
+.ba{
+    left: 400px;
+    top: 300px;
+}
+.bb{
+    left: 1000px;
+    top: 600px;
+}
+.bc{
+    left: 1300px;
+    top: 400px;
+}
+.bd{
+    left: -200px;
+    top: 251px;
+}
+.be{
+    left: 1700px;
+    top: 170px;
+}
+.skills{
+    padding: 1px 1px 1px 26px;
+    font-size: 16px;
+    transition: all 0.2s;
+    color: #FFFFFF;
+}
+.skills a:hover{
+    color: #ECEAEA;
+}
+.redes{
+    padding: 1px 1px 1px 16px;
+    font-size: 16px;
+    display: block;
+    color: #FFFFFF;
+}
+.redes a:hover{
+    color: #FFFFFF;
+}
+.trabajos{
+    padding: 1px 1px 1px 18px;
+    font-size: 16px;
+    color: #FFFFFF;
+    
+}
+.trabajos a:hover{
+    color: #FFFFFF;
+}
+
+.artboard{
+    width: 800px;
+    height: 679px;
+    background: transparent;  
+    /*box-shadow: 0px 3px 20px rgba(0,0,0,0.2);*/
+    /*border:1px white solid;*/
+    border-radius: 3px; 
+    margin:65px auto;
+    position: relative;
+    overflow: hidden
+}
+.stars{
+    position: absolute;
+    top: 201px;
+    left: 42px;
+}
+.stars-two{
+    position: absolute;
+    top: 208px;
+    left: 961px;
+}
+.stars-four{
+    position: absolute;
+    top: 141px;
+    left: 600px;
+    transform: rotate(5deg);
+}
+.star{
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: #F7F5F4;
+    border-radius: 50%;
+    top: 20px;
+    left: 100px;
+}
+.a{
+    width: 5px;
+    height: 5px;
+    top: 66px;
+    left: 300px;
+}
+.b{
+    width: 5px;
+    height: 5px;
+    top: 47px;
+    left: 550px;
+}
+.c{
+    width: 5px;
+    height: 5px;
+    top: 300px;
+    left: 696px;
+}
+.d{
+    width: 5px;
+    height: 5px;
+    top: 500px;
+    left: 333px;
+}
+.e{
+    width: 5px;
+    height: 5px;
+    top: 400px;
+    left: 50px;
+}
+.f{
+    width: 5px;
+    height: 5px;
+    top: 560px;
+    left: 700px;
+}
+.g{
+    width: 5px;
+    height: 5px;
+    top: 500px;
+    left: 600px;
+}
+.h{
+    top: 400px;
+    left: 400px;
+}
+.i{
+    top: 300px;
+    left: 250px;
+}
+.j{
+    top: 500px;
+    left: 100px;
+}
+
+
+
+
+
+
+
+
+#fire{
+    animation: fire 1.5s infinite; 
+    transition: all 0.2s;
+}
+
+@keyframes fire{
+    0%{
+        opacity:0.5;
+    }    
+    20%{
+        opacity:1;
+    }
+    40%{
+        opacity:0.3;
+    }
+    60%{
+        opacity:0.9;
+    }
+    80%{
+        opacity:0.6;
+    }
+    100%{
+        opacity:0.8;
+    }
+}
+
+.astronauta{
+    animation: astronauta 3.5s infinite; 
+}
+
+@keyframes astronauta{
+    0%{
+        transform: translate3d(0px,0px,0px) ;
+    }
+    30%{
+        transform: translate3d(10px,10px,0px);
+    }
+    55%{
+        transform: translate3d(-10px,10px,0px);
+    }
+    70%{
+        transform: translate3d(5px,5px,0px);
+    }
+    100%{
+        transform: translate3d(0px,0px,0px);
+    }
+}
+
+#saturnrotate{
+    animation: saturnrotate 3.5s infinite; 
+}
+
+@keyframes saturnrotate{
+    0%{
+        transform: rotate(-3deg);
+    }
+    50%{
+        transform: rotate(3deg);
+    }
+    100%{
+        transform: rotate(-3deg);
+    }
+    
+}
+.big:before{
+    animation: sun 2s infinite; 
+}
+
+@keyframes sun{
+    0%{
+       opacity: 1;
+    }
+    50%{
+       opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+
+/*.cosmos{
+    animation: cosmos 4s infinite; 
+}
+
+@keyframes cosmos{
+    0%{
+       transform: rotateX(-20deg);
+    }
+    50%{
+       transform: rotateX(0deg)ease;
+    }
+    100%{
+        transform: rotateX(-20deg);
+    }
+    
+}*/
+
+
+@-webkit-keyframes spinnerRotate
+{
+    from{-webkit-transform:rotate(0deg);}
+    to{-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes spinnerRotate
+{
+    from{-moz-transform:rotate(0deg);}
+    to{-moz-transform:rotate(360deg);}
+}
+@-ms-keyframes spinnerRotate
+{
+    from{-ms-transform:rotate(0deg);}
+    to{-ms-transform:rotate(360deg);}
+}
+
+@-webkit-keyframes spinnerRotateb
+{
+    from{-webkit-transform:rotate(0deg);}
+    to{-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes spinnerRotateb
+{
+    from{-moz-transform:rotate(0deg);}
+    to{-moz-transform:rotate(360deg);}
+}
+@-ms-keyframes spinnerRotateb
+{
+    from{-ms-transform:rotate(0deg);}
+    to{-ms-transform:rotate(360deg);}
+}
+
+@-webkit-keyframes spinnerRotatec
+{
+    from{-webkit-transform:rotate(0deg);}
+    to{-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes spinnerRotatec
+{
+    from{-moz-transform:rotate(0deg);}
+    to{-moz-transform:rotate(360deg);}
+}
+@-ms-keyframes spinnerRotatec
+{
+    from{-ms-transform:rotate(0deg);}
+    to{-ms-transform:rotate(360deg);}
+}
+
+@-webkit-keyframes spinnerRotated
+{
+    from{-webkit-transform:rotate(0deg);}
+    to{-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes spinnerRotated
+{
+    from{-moz-transform:rotate(0deg);}
+    to{-moz-transform:rotate(360deg);}
+}
+@-ms-keyframes spinnerRotated
+{
+    from{-ms-transform:rotate(0deg);}
+    to{-ms-transform:rotate(360deg);}
+}
+
+@-webkit-keyframes spinnerRotatee
+{
+    from{-webkit-transform:rotate(0deg);}
+    to{-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes spinnerRotatee
+{
+    from{-moz-transform:rotate(0deg);}
+    to{-moz-transform:rotate(360deg);}
+}
+@-ms-keyframes spinnerRotatee
+{
+    from{-ms-transform:rotate(0deg);}
+    to{-ms-transform:rotate(360deg);}
+}
+
+
+/*#saturnmove{
+    animation: saturnmove 3.5s infinite; 
+    transition: all 0.2s;
+}
+@keyframes saturnmove{
+    
+    0%{
+        transform: translate3d(0px,0px,0px) ease;
+    }
+    35%{
+        transform: translate3d(-3px,5px,0px);
+    }
+    59%{
+        transform: translate3d(2px,-2px,0px);
+    }
+    78%{
+        transform: translate3d(-3px,2px,0px);
+    }
+    100%{
+        transform: translate3d(0px,0px,0px);
+    }
+}*/
+
+
+
+#plutonrotate{
+    animation: plutonrotate 4s infinite; 
+}
+
+@keyframes plutonrotate{
+    0%{
+        transform: rotate(-5deg);
+    }
+    50%{
+        transform: rotate(5deg);
+    }
+    100%{
+        transform: rotate(-5deg);
+    }
+    
+}
+
+
+#plutonmove{
+    animation: plutonmove 4s infinite; 
+    transition: all 0.2s;
+}
+@keyframes plutonmove{
+    
+    0%{
+        transform: translate3d(0px,0px,0px) ease;
+    }
+    35%{
+        transform: translate3d(-3px,5px,0px);
+    }
+    59%{
+        transform: translate3d(2px,-2px,0px);
+    }
+    78%{
+        transform: translate3d(-3px,2px,0px);
+    }
+    100%{
+        transform: translate3d(0px,0px,0px);
+    }
+}
+
+
+#marterotate{
+    animation: marterotate 3s infinite; 
+    transition: all 0.2s;
+}
+
+@keyframes marterotate{
+    0%{
+        transform: rotate(-2deg);
+    }
+    50%{
+        transform: rotate(2deg);
+    }
+    100%{
+        transform: rotate(-2deg);
+    }
+    
+}
+
+
+/*#martemove{
+    animation: martemove 3.6s infinite; 
+    transition: all 0.2s;
+}
+@keyframes martemove{
+    
+    0%{
+        transform: translate3d(0px,0px,0px) ease;
+    }
+    35%{
+        transform: translate3d(-2px,2px,0px);
+    }
+    59%{
+        transform: translate3d(1px,-2px,0px);
+    }
+    78%{
+        transform: translate3d(-2px,2px,0px);
+    }
+    100%{
+        transform: translate3d(0px,0px,0px);
+    }
+}
+*/
+
+
+/*       --------------------------------------------------------------------        */
+
+
+
+
+/*****************************************************************************************************/
+/**********************************************************************************/
+/***********************************************************************************/
+@media (max-width: 1280px){
+.astro{
+    transform: scale(0.8);
+}
+.vialactea{
+    left: 300px;
+    top: 100px;
+}
+.perfil{
+    width: 87px;
+    height: 87px;
+    border-radius: 10px;
+    transform: rotate(45deg);
+    
+}
+img{
+    width: 116px;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: -14px;
+    top: -20px;
+
+}
+
+}
+
+@media (max-width: 1000px){
+.perfil{
+    width: 95px;
+    height: 95px;
+    border-radius: 10px;
+    transform: rotate(0deg);
+}
+img{
+    width: 116px;
+    margin-bottom: 23px;
+    transform: rotate(0deg);
+    position: absolute;
+    left: -14px;
+    top: -20px;
+
+}
+.astro{
+    transform: scale(0.8);
+}
+.vialactea{
+    left: 200px;
+    top: 150px;
+}
+}
+
+@media (max-width: 880px){
+
+.astro{
+    transform: scale(0.8);
+}
+.vialactea{
+    left: 450px;
+    top: 100px;
+}
+.saturn--planet{
+    widw: hidden;
+    top: 0px;
+    left: 0px;
+    transform: scale(1);
+}
+.saturn--card{
+    top: 161px;
+    left: 9px;
+    transition: all 0.4s;
+    transform: scale(1.5);
+}
+.pluton--planet{
+    top: -17px;
+    left: 0px;
+    transform: scale(1);
+    
+}
+.pluton--card{
+    top: 155px;
+    left: 2px;
+    transition: all 0.4s;
+    transform: scale(1.5);
+}
+.pluton--moon{
+    top: -75px;
+    left: 102px;
+    transform: scale(1);
+}
+.marte--planet{
+    top: 0px;
+    left: 0px;
+    transform: rotate(0deg);
+    transform: scale(1);
+    
+}
+.marte--card{
+    top: 148px;
+    left: 9px;
+    transition: all 0.4s;
+    
+}
+.marte--planet-shadow{
+    top: 52px;
+    left: -23px;
+    transform: rotate(3deg);
+    transform: scale(1.2);
+}
+}
+
+
+@media (max-width: 800px){
+.perfil{
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    border: 2px solid white;
+    transform: rotate(0deg);
+  
+}
+.astro{
+    transform: scale(0.8);
+}
+.vialactea{
+    left: 400px;
+    top: 100px;
+}
+.saturn--planet{
+    top: 16px;
+    left: 76px;
+    transform: rotate(-21deg);
+    transform: scale(1);
+}
+.saturn--card{
+    top: 161px;
+    left: 85px;
+    transform: scale(1);
+}
+
+.pluton--planet{
+    
+    top: -56px;
+    left: 0px;
+    transform: scale(1);
+    
+}
+.pluton--card{
+    top: 109px;
+    left: 2px;
+    transition: all 0.4s;
+    transform: scale(1);
+}
+.pluton--moon{
+    top: -114px;
+    left: -20px;
+    transform: scale(1);
+}
+.marte--planet{
+    top: -6px;
+    left: -62px;
+    transform: rotate(0deg);
+    transform: scale(1);
+    
+}
+.marte--card{
+    top: 129px;
+    left: -53px;
+    transition: all 0.4s;
+    transform: scale(1);
+}
+.marte--planet-shadow{
+    top: 46px;
+    left: -80px;
+    transform: rotate(3deg);
+    transform: scale(1.2);
+}
+}
+@media (max-width: 740px){
+.astro{
+    transform: scale(1);
+
+}
+.vialactea{
+    left: 400px;
+    top: 136px;
+    transform: scale(0.5);
+}
+.saturn--planet{
+    top: 16px;
+    left: 57px;
+    transform: rotate(-21deg);
+    transform: scale(1);
+}
+.saturn--card{
+    top: 161px;
+    left: 68px;
+    transform: scale(1);
+}
+
+.pluton--planet{
+    top: -56px;
+    left: -33px;
+    transform: scale(1);
+    
+}
+.pluton--card{
+    top: 109px;
+    left: -37px;
+    transition: all 0.4s;
+    transform: scale(1);
+}
+.pluton--moon{
+    top: -114px;
+    left: -44px;
+    transform: scale(1);
+}
+.marte--planet{
+    top: -6px;
+    left: -116px;
+    transform: rotate(0deg);
+    transform: scale(1);
+    
+}
+.marte--card{
+    top: 129px;
+    left: -112px;
+    transition: all 0.4s;
+    transform: scale(1);
+}
+.marte--planet-shadow{
+    top: 46px;
+    left: -134px;
+    transform: rotate(3deg);
+    transform: scale(1.2);
+}
+}
+
+@media (max-width: 680px){
+.astro{
+    transform: scale(1);
+}
+.astronauta{
+    width: 100px;
+    height: 203px;
+    top: 46%;
+    left: 34%;
+    
+}
+.vialactea{
+    left: 100px;
+    top: 236px;
+    transform: scale(0.3);
+}
+.saturn--planet{
+    top: 16px;
+    left: 101px;
+    transform: rotate(-21deg);
+    transform: scale(1);
+}
+.saturn--card{
+    top: 161px;
+    left: 112px;
+    transform: scale(1);
+}
+
+.pluton--planet{
+    top: 3px;
+    left: -62px;
+    transform: scale(1);
+    
+}
+.pluton--card{
+    top: 165px;
+    left: -63px;
+    transition: all 0.4s;
+    transform: scale(1);
+}
+.pluton--moon{
+    top: -114px;
+    left: 43px;
+    transform: scale(1);
+}
+.marte--planet{
+    top: -6px;
+    left: -220px;
+    transform: rotate(0deg);
+    transform: scale(1);
+    
+}
+.marte--card{
+    top: 129px;
+    left: -215px;
+    transition: all 0.4s;
+    transform: scale(1);
+}
+.marte--planet-shadow{
+    top: 46px;
+    left: -240px;
+    transform: rotate(3deg);
+    transform: scale(1.2);
+}
+}
+
+@media (max-width: 414px){
+.astro{
+    transform: scale(1);
+}
+.astronauta{
+    width: 100px;
+    height: 203px;
+    top: 46%;
+    left: 20%;
+    
+}
+.vialactea{
+    left: 60px;
+    top: 313px;
+    transform: scale(0.4);
+}
+.saturn--planet{
+    top: 16px;
+    left: -24px;
+    transform: rotate(-21deg);
+    transform: scale(1);
+}
+.saturn--card{
+    top: 161px;
+    left: -8px;
+    transform: scale(1);
+}
+
+.pluton--planet{
+    top: 3px;
+    left: -185px;
+    transform: scale(1);
+    
+}
+.pluton--card{
+    top: 165px;
+    left: -189px;
+    transition: all 0.4s;
+    transform: scale(1);
+}
+.pluton--moon{
+    top: -66px;
+    left: -82px;
+    transform: scale(1);
+}
+.marte--planet{
+    top: -38px;
+    left: -348px;
+    transform: rotate(0deg);
+    transform: scale(1);
+    
+}
+.marte--card{
+    top: 95px;
+    left: -333px;
+    transition: all 0.4s;
+    transform: scale(1);
+}
+.marte--planet-shadow{
+    top: 13px;
+    left: -372px;
+    transform: rotate(3deg);
+    transform: scale(0.9);
+}
+}
+@media (max-width: 320px){
+.astro{
+    transform: scale(1);
+}
+.astronauta{
+    width: 100px;
+    height: 203px;
+    position: absolute;
+    /*background: pink;*/
+    top: 38%;
+    left: 22%;
+    
+}
+.vialactea{
+    left: 30px;
+    top: 423px;
+    transform: scale(0.4);
+}
+.saturn--planet{
+    top: 250px;
+    left: -11px;
+    transform: rotate(-21deg);
+    transform: scale(1);
+}
+.saturn--card{
+    top: 389px;
+    left: -5px;
+    transform: scale(1);
+}
+
+.pluton--planet{
+    top: -80px;
+    left: -242px;
+    transform: scale(1.4);
+    
+}
+.pluton--card{
+    top: 105px;
+    left: -245px;
+    transition: all 0.4s;
+    transform: scale(1);
+}
+.pluton--moon{
+    top: -134px;
+    left: -119px;
+    transform: scale(1);
+}
+.marte--planet{
+    top: 462px;
+    left: -447px;
+    transform: rotate(0deg);
+    transform: scale(1);
+    
+}
+.marte--card{
+    top: 602px;
+    left: -439px;
+    transition: all 0.4s;
+    transform: scale(1);
+}
+.marte--planet-shadow{
+    top: 514px;
+    left: -471px;
+    transform: rotate(3deg);
+    transform: scale(0.9);
+}
+}

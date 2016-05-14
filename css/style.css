@@ -7,6 +7,16 @@
   justify-content: center;
   align-items: center; }
 
+.header--trabajos {
+  height: 120px;
+  width: 100%;
+  background: #FF6C00;
+  border-bottom: 0px solid #B54E03;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; }
+
 .astronauta {
   width: 100px;
   height: 203px;
@@ -1104,19 +1114,55 @@
   left: 106px;
   top: 0px; }
 
+.nav {
+  background: #E6E6E6;
+  height: 100px;
+  margin: 0;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3); }
+
+.trabajosm {
+  margin: 0;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  padding-top: 1.5em;
+  color: #8D8D8D; }
+
+.section--trabajos {
+  margin: 3em auto;
+  width: 90%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around; }
+
+.work {
+  width: 400px;
+  height: 310px;
+  background: #FFFFFF;
+  border: 10px solid #FFFFFF;
+  border-bottom-width: 26px;
+  border-radius: 5px;
+  margin: 0.5em 1em 2em 1em; }
+
+.thor {
+  width: 381px; }
+
 /*variables   signo $ mas nombre que le damos a la variable y luego el valor de la variable*/
 * {
   box-sizing: border-box;
   color: white;
-  /*border: 1px solid white;*/ }
+  /*border: 1px solid red;*/ }
 
 body {
   background: #000321;
   font-family: 'Alegreya SC', serif;
+  font-size: 16px;
   /*font-weight: bold;*/
   color: #FFFFFF;
   margin: 0;
   padding: 0; }
+
+.bodytrabajos {
+  background: #F0F0F0; }
 
 a {
   text-decoration: none; }
@@ -1137,7 +1183,7 @@ h1 {
   position: relative;
   transition: all 0.5s ease; }
 
-img {
+.mag {
   width: 99px;
   transition: all 0.5s ease; }
 
@@ -1566,12 +1612,17 @@ img {
     border-radius: 10px;
     transform: rotate(-45deg); }
 
-  img {
+  .mag {
     width: 116px;
     transform: rotate(45deg);
     position: absolute;
     left: -14px;
     top: -20px; }
+
+  .artboard {
+    width: 800px;
+    height: 679px;
+    margin: 20px auto; }
 
   .astronauta {
     width: 100px;
@@ -1632,7 +1683,7 @@ img {
     border-radius: 10px;
     transform: rotate(0deg); }
 
-  img {
+  .mag {
     width: 116px;
     margin-bottom: 23px;
     transform: rotate(0deg);
@@ -1699,7 +1750,7 @@ img {
     border-radius: 10px;
     transform: rotate(45deg); }
 
-  img {
+  .mag {
     width: 116px;
     transform: rotate(-45deg);
     position: absolute;
@@ -1780,6 +1831,19 @@ img {
     left: 400px;
     top: 100px; }
 
+  .star-all {
+    display: none; }
+
+  .clouds {
+    display: none; }
+
+  .artboard {
+    /*border:1px solid white;*/
+    width: 600px;
+    height: 679px;
+    top: 0px;
+    left: -0px; }
+
   .astronauta {
     width: 100px;
     height: 203px;
@@ -1789,23 +1853,23 @@ img {
   .saturn--planet {
     widw: hidden;
     top: 81px;
-    left: 135px;
+    left: 46px;
     transform: scale(1); }
 
   .saturn--card {
     top: 227px;
-    left: 147px;
+    left: 54px;
     transition: all 0.4s;
     transform: scale(1); }
 
   .pluton--planet {
-    top: -115px;
-    left: 0px;
+    top: -103px;
+    left: -95px;
     transform: scale(1); }
 
   .pluton--card {
     top: 46px;
-    left: 2px;
+    left: -93px;
     transition: all 0.4s;
     transform: scale(1); }
 
@@ -1816,30 +1880,49 @@ img {
 
   .marte--planet {
     top: 70px;
-    left: -100px;
+    left: -206px;
     transform: rotate(0deg);
     transform: scale(1); }
 
   .marte--card {
     top: 216px;
-    left: -92px;
+    left: -198px;
     transition: all 0.4s;
     transform: scale(1); }
 
   .marte--planet-shadow {
     top: 122px;
-    left: -118px;
+    left: -227px;
     transform: rotate(3deg);
-    transform: scale(1.2); } }
+    transform: scale(1); } }
 /******************************************************************/
 @media (max-width: 740px) {
+  .perfil {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    border: 2px solid white;
+    transform: rotate(45deg); }
+
   .astro {
-    transform: scale(1); }
+    transform: scale(0.8); }
 
   .vialactea {
     left: 400px;
-    top: 136px;
-    transform: scale(0.5); }
+    top: 100px; }
+
+  .star-all {
+    display: none; }
+
+  .clouds {
+    display: none; }
+
+  .artboard {
+    /*border:1px solid white;*/
+    width: 600px;
+    height: 679px;
+    top: 0px;
+    left: -0px; }
 
   .astronauta {
     width: 100px;
@@ -1850,23 +1933,23 @@ img {
   .saturn--planet {
     widw: hidden;
     top: 81px;
-    left: 135px;
+    left: 46px;
     transform: scale(1); }
 
   .saturn--card {
     top: 227px;
-    left: 147px;
+    left: 54px;
     transition: all 0.4s;
     transform: scale(1); }
 
   .pluton--planet {
-    top: -115px;
-    left: 0px;
+    top: -103px;
+    left: -95px;
     transform: scale(1); }
 
   .pluton--card {
     top: 46px;
-    left: 2px;
+    left: -93px;
     transition: all 0.4s;
     transform: scale(1); }
 
@@ -1877,21 +1960,21 @@ img {
 
   .marte--planet {
     top: 70px;
-    left: -100px;
+    left: -206px;
     transform: rotate(0deg);
     transform: scale(1); }
 
   .marte--card {
     top: 216px;
-    left: -92px;
+    left: -198px;
     transition: all 0.4s;
     transform: scale(1); }
 
   .marte--planet-shadow {
     top: 122px;
-    left: -118px;
+    left: -227px;
     transform: rotate(3deg);
-    transform: scale(1.2); } }
+    transform: scale(1); } }
 /***************************************************************************/
 @media (max-width: 680px) {
   .astro {
@@ -1901,7 +1984,7 @@ img {
     width: 100px;
     height: 203px;
     top: 46%;
-    left: 34%; }
+    left: 44%; }
 
   .vialactea {
     left: 100px;
@@ -2013,16 +2096,12 @@ img {
     transform: rotate(3deg);
     transform: scale(0.9); } }
 /******************************************************************************/
-@media (max-width: 360px) {
-  .artboard {
-    width: 360px;
-    height: 679px; }
+@media (max-width: 435px) {
+  .star-all {
+    display: none; }
 
   .clouds {
     display: none; }
-
-  .astro {
-    transform: scale(1); }
 
   .astronauta {
     width: 100px;
@@ -2032,10 +2111,12 @@ img {
     top: 38%;
     left: 57%; }
 
-  .vialactea {
-    left: 30px;
-    top: 423px;
-    transform: scale(0.4); }
+  .artboard {
+    /*border:1px solid white;*/
+    width: 360px;
+    height: 679px;
+    top: 0px;
+    left: -0px; }
 
   .saturn--planet {
     top: 250px;
@@ -2080,10 +2161,20 @@ img {
     top: 466px;
     left: -471px;
     transform: rotate(3deg);
-    transform: scale(0.9); }
+    transform: scale(0.9); } }
+/*****************************************************************************/
+@media (max-width: 360px) {
+  .artboard {
+    width: 360px;
+    height: 679px; }
 
-  .star-all {
-    display: none; } }
+  .astro {
+    transform: scale(1); }
+
+  .vialactea {
+    left: 30px;
+    top: 423px;
+    transform: scale(0.4); } }
 @media (max-width: 320px) {
   .artboard {
     width: 320px;

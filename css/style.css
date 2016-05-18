@@ -1116,7 +1116,7 @@
 
 .nav {
   background: #E6E6E6;
-  height: 100px;
+  height: 50px;
   margin: 0;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3); }
 
@@ -1124,26 +1124,100 @@
   margin: 0;
   text-align: center;
   font-family: 'Lobster', cursive;
-  padding-top: 1.5em;
+  padding-top: 0.5em;
   color: #8D8D8D; }
 
 .section--trabajos {
   margin: 3em auto;
-  width: 90%;
+  width: 95%;
   display: flex;
   flex-flow: wrap;
   justify-content: space-around; }
 
 .work {
   width: 400px;
-  height: 310px;
+  height: 320px;
   background: #FFFFFF;
   border: 10px solid #FFFFFF;
   border-bottom-width: 26px;
-  border-radius: 5px;
-  margin: 0.5em 1em 2em 1em; }
+  border-radius: 3px;
+  margin: 0.5em 0.5em 2em 0em;
+  font-family: 'Raleway', sans-serif; }
+
+.work--fotter {
+  width: 380px;
+  height: 24px;
+  background: #FBFBFB;
+  padding-top: 0.5em;
+  display: flex;
+  justify-content: space-between; }
+
+.name--footer {
+  color: #C8C8C8;
+  font-weight: bold;
+  font-style: italic; }
+
+.purecss--footer {
+  color: #DA0000;
+  font-weight: normal;
+  font-style: italic; }
+
+.flex--footer {
+  color: #002EDA;
+  font-weight: normal;
+  font-style: italic; }
+
+.class--footer {
+  color: #C8C8C8;
+  font-weight: Normal;
+  font-style: italic; }
 
 .thor {
+  width: 381px; }
+
+.iron-man {
+  width: 381px; }
+
+.capitan-america {
+  width: 381px; }
+
+.got-ironthrone {
+  width: 381px; }
+
+.gott-sword {
+  width: 381px; }
+
+.astronaut {
+  width: 381px; }
+
+.plut {
+  width: 381px; }
+
+.jupiter {
+  width: 381px; }
+
+.cosmo {
+  width: 381px; }
+
+.bon {
+  width: 381px; }
+
+.dice {
+  width: 381px; }
+
+.tiny {
+  width: 381px; }
+
+.mostly {
+  width: 381px; }
+
+.columndrop {
+  width: 381px; }
+
+.layoutshifter {
+  width: 381px; }
+
+.offcanvas {
   width: 381px; }
 
 /*variables   signo $ mas nombre que le damos a la variable y luego el valor de la variable*/
@@ -1265,8 +1339,8 @@ h1 {
   color: #ECEAEA; }
 
 .redes {
-  padding: 1px 1px 1px 16px;
-  font-size: 16px;
+  padding: 1px 1px 1px 18px;
+  font-size: 17px;
   display: block;
   color: #FFFFFF; }
 

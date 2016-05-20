@@ -11,7 +11,18 @@
 .header--trabajos{
     height: 120px;
     width: 100%;
-    background: #FF6C00;
+    background: #290535;
+    border-bottom: 0px solid #B54E03;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    
+}
+.header--skills{
+    height: 120px;
+    width: 100%;
+    background: #290535;
     border-bottom: 0px solid #B54E03;
     display: flex;
     justify-content: center;

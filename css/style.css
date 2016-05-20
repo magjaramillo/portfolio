@@ -1142,7 +1142,8 @@
   width: 95%;
   display: flex;
   flex-flow: wrap;
-  justify-content: space-around; }
+  justify-content: space-around;
+  transition: all 0.8s ease; }
 
 .work {
   width: 400px;
@@ -1243,8 +1244,36 @@
   padding-top: 0.5em;
   color: #8E8E8E; }
 
+.titles {
+  margin: 0em auto;
+  margin-top: 3em;
+  margin-bottom: -1px;
+  width: 95%;
+  display: flex;
+  /*flex-flow: wrap;*/
+  justify-content: space-between;
+  font-family: 'Raleway', sans-serif;
+  font-style: italic; }
+
+.titles--box {
+  flex: 1 1 35%;
+  border-radius: 3px; }
+
+.titles h2 {
+  margin: 0 auto;
+  /*margin: 0 0 0 48px;*/
+  padding-top: 8px;
+  text-align: center;
+  color: #00F0FF;
+  background: #2D2D2D;
+  border-radius: 3px;
+  width: 220px;
+  height: 40px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 19px; }
+
 .cont {
-  margin: 3em auto;
+  margin: 0 auto;
   width: 95%;
   display: flex;
   /*flex-flow: wrap;*/
@@ -1254,10 +1283,10 @@
 
 .cont--skills {
   background: #2D2D2D;
-  height: 700px;
+  height: 720px;
   flex: 1 1 35%;
   margin: 0 2em 0 3em;
-  padding: 2em; }
+  padding: 3em 2em 2em 2em; }
 
 .porcentaje {
   color: red; }
@@ -1906,6 +1935,82 @@ h1 {
 /*****************************************************************************************************/
 /**********************************************************************************/
 /***********************************************************************************/
+@media (max-width: 1770px) {
+  .section--trabajos {
+    margin: 3em auto;
+    width: 80%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around; } }
+@media (max-width: 1550px) {
+  .section--trabajos {
+    width: 90%; } }
+@media (max-width: 1400px) {
+  .section--trabajos {
+    width: 70%; } }
+@media (max-width: 1560px) {
+  .titles h2 {
+    margin: 0 auto;
+    /*margin: 0 0 0 48px;*/
+    padding-top: 8px;
+    text-align: center;
+    color: #00F0FF;
+    background: #2D2D2D;
+    border-radius: 3px;
+    width: 140px;
+    height: 27px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px; }
+
+  .cont--skills {
+    background: #2D2D2D;
+    height: 550px;
+    flex: 1 1 35%;
+    margin: 0 2em 0 3em;
+    padding: 1.6em 0.8em 0.8em 1.3em; }
+
+  .programas {
+    margin-bottom: 1em; }
+
+  .programas img {
+    width: 1.1em;
+    border-radius: 50%; }
+
+  .programas span {
+    margin-left: 0.2em;
+    font-size: 0.8em; }
+
+  .programas-left {
+    flex: 1 1 50%; }
+
+  .webdesign {
+    margin-bottom: 1em; }
+
+  .webdesign img {
+    width: 1.1em; }
+
+  .negocios {
+    margin-bottom: 1em; }
+
+  .negocios img {
+    width: 1.1em; }
+
+  .negocios span {
+    margin-left: 0.2em;
+    font-size: 0.8em; }
+
+  .webdesign span {
+    margin-left: 0.2em;
+    font-size: 0.8em; }
+
+  .icon-star-full {
+    margin: 0;
+    padding: 0;
+    font-size: 0.7em;
+    color: #FFE400; }
+
+  .programas-right div {
+    margin: 5px 0px 8.4px 0px; } }
 @media (max-width: 1280px) {
   .astro {
     transform: scale(0.8); }
@@ -1919,6 +2024,9 @@ h1 {
     height: 87px;
     border-radius: 10px;
     transform: rotate(-45deg); }
+
+  .section--trabajos {
+    width: 78%; }
 
   .mag {
     width: 116px;
@@ -1983,6 +2091,13 @@ h1 {
     left: -71px;
     transform: rotate(3deg);
     transform: scale(1.2); } }
+@media (max-width: 1100px) {
+  .section--trabajos {
+    margin: 3em auto;
+    width: 90%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around; } }
 /**************************************************************/
 @media (max-width: 1000px) {
   .perfil {
@@ -2125,6 +2240,18 @@ h1 {
     transform: scale(1.2); } }
 /**********************************************************************/
 @media (max-width: 800px) {
+  .cont {
+    margin: 0 auto;
+    width: 95%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic; }
+
+  .programas-left {
+    flex: 0 0 600px; }
+
   .perfil {
     width: 95px;
     height: 95px;
@@ -2367,6 +2494,9 @@ h1 {
     transform: scale(1.2); } }
 /**********************************************************************/
 @media (max-width: 414px) {
+  .work {
+    transform: scale(0.9); }
+
   .astro {
     transform: scale(1); }
 
@@ -2492,8 +2622,22 @@ h1 {
     left: -471px;
     transform: rotate(3deg);
     transform: scale(0.9); } }
+@media (max-width: 400px) {
+  .section--trabajos {
+    margin: 3em auto;
+    width: 95%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    transition: all 0.8s ease; }
+
+  .work {
+    transform: scale(0.8); } }
 /*****************************************************************************/
 @media (max-width: 360px) {
+  .work {
+    transform: scale(0.7); }
+
   .artboard {
     width: 360px;
     height: 679px; }

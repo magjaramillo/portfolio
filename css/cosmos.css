@@ -3,6 +3,8 @@ body{
     font-family: 'Alegreya SC', serif;
     /*font-weight: bold;*/
     color: #FF0084;
+    margin:0;
+    
 }
 *{
     box-sizing: border-box;

@@ -1,0 +1,586 @@
+body{
+    background: #eee;
+}
+*{
+    box-sizing: border-box;
+}
+h1{
+    font-family:game,arial;
+    color: #A80000;
+    font-weight: lighter;
+    font-size: 28px;
+}
+.header{
+    height: 120px;
+    width: 100%;
+    background: #000321;
+    border-bottom: 2px solid #D80FC3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.header--trabajos{
+    height: 120px;
+    width: 100%;
+    background: #290535;
+    border-bottom: 0px solid #B54E03;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    
+}
+
+.mag{
+      width: 99px;
+    
+}
+
+.perfil{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 0 auto; 
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.artboard{
+    width: 800px;
+    height: 600px;
+    background: #280535;   
+    box-shadow: 0px 3px 20px rgba(0,0,0,0.2);
+    border-radius: 3px; 
+    margin:50px auto;
+    border:20px white solid;
+    position: relative;
+    overflow: hidden
+}
+.world{
+    width: 1500px;
+    height: 1500px;
+    position: absolute;
+    background: #FFEA00;
+    border: 12px solid #D99900;
+    border-radius: 50%;
+    top: 501px;
+    left: -350px;
+}
+.world:before{
+    content: "";
+    width: 1500px;
+    height: 1500px;
+    position: absolute;
+    /*background: #FFEA00;
+    border: 12px solid #C58B00;*/
+    box-shadow: 0px 0px 55px rgba(256,256,0,0.8);
+    border-radius: 50%;
+    top: -12px;
+    left: -12px;
+}
+.world:after{
+    content: "";
+    width: 1500px;
+    height: 1500px;
+    position: absolute;
+    /*background: #FFEA00;
+    border: 12px solid #C58B00;*/
+    box-shadow: 0px 0px 66px rgba(0,0,0,0.4);
+    border-radius: 50%;
+    top: 9px;
+    left: 0px;
+}
+.astronauta{
+    width: 100px;
+    height: 203px;
+    position: absolute;
+    /*background: pink;*/
+    top: 30%;
+    left: 42%;
+}
+/*.head--out{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    overflow: hidden;
+    top: -47px;
+    left: 1px;
+
+}
+.head--in{
+    width: 63px;
+    height: 100px;
+    position: absolute;
+    background: #F4F4F4;
+    border: 4px solid #27144E;
+    border-radius: 50px;
+    top: 50px;
+    left: 18px;
+}*/
+
+.tank{
+    width: 100px;
+    height: 67px;
+    position: absolute;
+    background: #E1E1E1;
+    border: 4px solid #27144E;
+    border-radius: 11px;
+    top: 45px;
+    left: 0px;
+}
+
+.ear{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #E1E1E1;
+    border: 4px solid #27144E;
+    border-radius: 10px;
+    top: 9px;
+    left: 0px;
+}
+.eright{
+   top: 9px;
+   left: 69px; 
+}
+
+.head--out{
+    width: 81px;
+    height: 75px;
+    position: absolute;
+    background: #F4F4F4;
+    border: 4px solid #27144E;
+    border-radius: 50px;
+    top: -11px;
+    left: 9px;
+    overflow: hidden;
+
+}
+.head--out-shadow{
+    width: 81px;
+    height: 75px;
+    position: absolute;
+    box-shadow: 0px 0px 31px rgba(0,0,0,0.8);
+    border-radius: 50px;
+    top: -2px;
+    left: -21px;
+
+}
+
+.glass{
+    width: 55px;
+    height: 40px;
+    position: absolute;
+    background: #6DC2C5;
+    border: 4px solid #27144E;
+    border-radius: 15px;
+    top: 14px;
+    left: 10px;
+    overflow: hidden;
+}
+.glass:before{
+    content: "";
+    width: 4px;
+    height: 60px;
+    position: absolute;
+    background: rgba(256,256,256, 0.5);
+    top: -13px;
+    left: 16px; 
+    transform: rotate(17deg);
+}
+.glass:after{
+    content: "";
+    width: 7px;
+    height: 60px;
+    position: absolute;
+    background: rgba(256,256,256, 0.5);
+    top: -13px;
+    left: 25px; 
+    transform: rotate(17deg);
+}
+.eyes{
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    display: block;
+    /*background: pink;*/
+    top: -4px;
+    left: -8px;
+    transition: all 0.3s;
+}
+.eyes:hover{
+    top: -10px;
+}
+.eye{
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    display: block;
+    background: #27144E;
+    border-radius: 50%;
+    top: 18px;
+    left: 17px;
+}
+.eye:before{
+    content: "";
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    background: #27144E;
+    border-radius: 50%;
+    top: 0px;
+    left: 22px;
+}
+.neck{
+    width: 66px;
+    height: 12px;
+    position: absolute;
+    background: #E00E50;
+    border: 4px solid black;
+    border-radius: 5px;
+    top: 50px;
+    left: 17px;
+}
+.body{
+    width: 66px;
+    height: 70px;
+    position: absolute;
+    background: #F4F4F4;
+    border: 4px solid #27144E;
+    border-radius: 10px 10px 5px 5px;
+    top: 59px;
+    left: 17.5px;
+}
+.machine{
+    width: 40px;
+    height: 38px;
+    position: absolute;
+    background: #B9B9B9;
+    border-radius:2px;
+    top: 6px;
+    left: 10px;
+    transition: all 0.2s;
+}
+.machine:hover{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: #E00E50;
+    border-radius:2px;
+    top: 4px;
+    left: 10px;
+}
+
+.machine:before{
+    content: "";
+    width: 30px;
+    height: 5px;
+    position: absolute;
+    background: #E4E1E1;
+    border-radius:1px;
+    top: 26px;
+    left: 5px;
+}
+.machine:before{
+    content: "";
+    width: 30px;
+    height: 5px;
+    position: absolute;
+    background: #E4E1E1;
+    border-radius:1px;
+    top: 26px;
+    left: 5px;
+}
+.machine:after{
+    content: "";
+    width: 30px;
+    height: 5px;
+    position: absolute;
+    background: #E4E1E1;
+    border-radius:1px;
+    top: 17px;
+    left: 5px;
+}
+.button{
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    display: block;
+    background: #6D6D6D;
+    border-radius: 50%;
+    top: 5px;
+    left: 6px;
+}
+.button:before{
+    content: "";
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    display: block;
+    background: #6D6D6D;
+    border-radius: 50%;
+    top: 0px;
+    left: 10.5px;
+}
+.button:after{
+    content: "";
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    display: block;
+    background: #6D6D6D;
+    border-radius: 50%;
+    top: 0px;
+    left: 21px;
+}
+.belt{
+    width: 68px;
+    height: 16px;
+    position: relative;
+    background: #C2C2C2;
+    border: 4px solid #27144E;
+    border-radius:3px;
+    top: 112px;
+    left: 16px;
+}
+
+.pass{
+    width: 10px;
+    height: 20px;
+    position: absolute;
+    background: #0FCCEE;
+    border: 3px solid #27144E;
+    border-radius:4px;
+    top: -6px;
+    left: -6px;
+}
+.pa{
+    top: -6px;
+    left: 55px;
+}
+.pb{
+    top: -6px;
+    left: 37px;
+}
+.pc{
+    top: -6px;
+    left: 13px;
+}
+.hands{
+    width: 35px;
+    height: 80px;
+    position: absolute;
+    background: #F4F4F4;
+    border: 4px solid #27144E;
+    border-radius: 20px;
+    top: 59px;
+    left: 2px;
+}
+.hands:before{
+    content: "";
+    width: 30px;
+    height: 4px;
+    position: absolute;
+    background: #0FCCEE;
+    border: 3px solid #27144E;
+    border-radius: 20px;
+    top: 17px;
+    left: -4px;
+}
+.hands:after{
+    content: "";
+    width: 30px;
+    height: 4px;
+    position: absolute;
+    background: #0FCCEE;
+    border: 3px solid #27144E;
+    border-radius: 20px;
+    top: 26px;
+    left: -4px;
+}
+
+.hright{
+    top: 59px;
+    left: 64px;
+    overflow: hidden;
+}
+.hright--shadow{
+    width: 35px;
+    height: 80px;
+    position: absolute;
+    box-shadow: 0px 0px 64px rgba(0,0,0,0.9);
+    border-radius: 20px;
+    top: -4px;
+    left: -13px;
+}
+.foot{
+    width: 29px;
+    height: 57px;
+    position: absolute;
+    background: #F4F4F4;
+    border: 4px solid #27144E;
+    border-radius: 20px;
+    top: 118px;
+    left: 20px;
+}
+.foot:after{
+    content: "";
+    width: 15px;
+    height: 10px;
+    position: absolute;
+    background: #A7A7A7;
+    border-radius: 3px;
+    top: 20px;
+    left: 3px;
+}
+.boot{
+    width: 29px;
+    height: 33px;
+    position: absolute;
+    background: #E00E50;
+    border: 4px solid #27144E;
+    border-radius: 0px 0px 20px 20px;
+    top: 40px;
+    left: -4px;
+}
+.boot:after{
+    content: "";
+    width: 15px;
+    height: 3px;
+    position: absolute;
+    background: #870A31;
+    border-radius: 3px;
+    top: 15px;
+    left: 3px;
+}
+.boot:before{
+    content: "";
+    width: 15px;
+    height: 3px;
+    position: absolute;
+    background: #870A31;
+    border-radius: 3px;
+    top: 19px;
+    left: 3px;
+}
+.fright{
+   
+    top: 118px;
+    left: 50px;
+}
+.shadow--rocket{
+    position: absolute;
+    top: -39px;
+    left: 2px;
+    transform: rotate(10deg);
+}
+.shadow-orange{
+    width: 27px;
+    height: 56px;
+    position: absolute;
+    background: rgba(247,147,30,0.8);
+    box-shadow: -2px 25px 56px rgba(247,147,30,0.9);
+    border-radius: 20px;
+    top: 130px;
+    left: 36px;
+}
+.shadow-red{
+    width: 27px;
+    height: 56px;
+    position: absolute;
+    background: rgba(247,147,30,0);
+    box-shadow: 0px 18.2px 14px rgba(209,43,5,0.8);
+    border-radius: 20px;
+    top: 129px;
+    left: 36px;
+}
+.sright{
+    top: -22px;
+    left: 0px;
+    transform: rotate(-10deg);
+}
+.star{
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background: #EBEBEB;
+    border-radius: 50%;
+    top: 100px;
+    left: 200px;
+}
+.star:before{
+    content: "";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background: #EBEBEB;
+    border-radius: 50%;
+    top: 250px;
+    left: 400px;
+}
+.star:after{
+    content: "";
+    width: 3px;
+    height: 3px;
+    position: absolute;
+    background: #EBEBEB;
+    border-radius: 50%;
+    top: 300px;
+    left: -101px;
+}
+.stara{
+    top: 58px;
+    left: 600px;
+    transform: rotate(90deg);
+}
+
+#fire{
+    animation: fire 1.5s infinite; 
+    transition: all 0.2s;
+}
+
+@keyframes fire{
+    0%{
+        opacity:0.5;
+    }    
+    20%{
+        opacity:1;
+    }
+    40%{
+        opacity:0.3;
+    }
+    60%{
+        opacity:0.9;
+    }
+    80%{
+        opacity:0.6;
+    }
+    100%{
+        opacity:0.8;
+    }
+}
+
+.astronauta{
+    animation: astronauta 3.5s infinite; 
+}
+
+@keyframes astronauta{
+    0%{
+        transform: translate3d(0px,0px,0px) ease;
+    }
+    30%{
+        transform: translate3d(10px,10px,0px);
+    }
+    55%{
+        transform: translate3d(-10px,10px,0px);
+    }
+    70%{
+        transform: translate3d(5px,5px,0px);
+    }
+    100%{
+        transform: translate3d(0px,0px,0px);
+    }
+}

@@ -1,0 +1,226 @@
+body{
+    font-family: sans-serif;
+    color: white;
+    background: #0A5676;
+    margin: 0;
+    
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+.header{
+    height: 120px;
+    width: 100%;
+    background: #000321;
+    border-bottom: 2px solid #D80FC3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.header--trabajos{
+    height: 120px;
+    width: 100%;
+    background: #290535;
+    border-bottom: 0px solid #B54E03;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    
+}
+
+.mag{
+      width: 99px;
+    
+}
+
+.perfil{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 0 auto; 
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+
+.headerr{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+
+}
+
+.punto{
+    background: #25020f;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}
+
+.dado1{
+    background: #ff004e;
+    border-radius: 7%;
+    height: 150px;
+    width: 150px;
+    margin: 30px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dado2{
+    background: #ff004e;
+    border-radius: 7%;
+    height: 150px;
+    width: 150px;
+    padding: 20px;
+    margin: 30px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.dado2 .punto:nth-child(2){
+    align-self: flex-end;
+}
+
+.dado3{
+    background: #ff004e;
+    border-radius: 7%;
+    height: 150px;
+    width: 150px;
+    padding: 20px;
+    margin: 30px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dado3 .punto:nth-child(1){
+    align-self: flex-start;
+}
+.dado3 .punto:nth-child(3){
+    align-self: flex-end;
+}
+
+.dado4{
+    background: #ff004e;
+    border-radius: 7%;
+    height: 150px;
+    width: 150px;
+    padding: 20px;
+    margin: 30px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    
+}
+.columna4{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.dado5{
+    background: #ff004e;
+    border-radius: 7%;
+    height: 150px;
+    width: 150px;
+    padding: 20px;
+    margin: 30px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    
+}
+.medio{
+    align-self: center;
+}
+.columna5{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.dado6{
+    background: #ff004e;
+    border-radius: 7%;
+    height: 150px;
+    width: 150px;
+    padding: 20px;
+    margin: 30px;
+    box-sizing: border-box;
+
+    display: flex;
+    
+    justify-content: space-between;
+
+    
+}
+.columna6{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+}
+
+.domino{
+    background: #ff004e;
+    border-radius: 5%;
+    height: 310px;
+    width: 150px;
+    margin: 30px;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    
+
+    
+}
+
+.up{
+    border-radius: 7%;
+    height: 150px;
+    width: 150px;
+    padding: 20px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.mid{
+    background: #25020f;
+    width: 140px;
+    height: 10px;
+    margin: 0 auto;
+    border-radius: 10px
+}
+.down{
+    border-radius: 7%;
+    height: 150px;
+    width: 150px;
+    padding: 20px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,142 @@
+body{
+    margin: 0 auto;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+*{
+    color: white;
+    box-sizing: border-box;
+}
+/*.muestra{
+    border:3px solid yellow;
+}*/
+nav{
+    width: 100%;
+    padding: 1em;
+    height: 117px;
+    line-height: 64px;
+    background: #0A5676;
+    text-align: center;
+    font-size: 14px;
+}
+*{
+    
+}
+
+.header{
+    height: 120px;
+    width: 100%;
+    background: #000321;
+    border-bottom: 2px solid #D80FC3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.header--trabajos{
+    height: 120px;
+    width: 100%;
+    background: #290535;
+    border-bottom: 0px solid #B54E03;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    
+}
+
+.mag{
+      width: 99px;
+    
+}
+
+.perfil{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 0 auto; 
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease;
+}
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.s1{
+    background: #ff004e;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.s2{
+    background: #25020f;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s3{
+    background: #9e1e4c;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s4{
+    background: #797066;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s5{
+    background: #d5cfa7;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.b{
+    background: rgba(256,256,256, 0.3);
+    padding: 0px 15px;
+    border-radius: 3px;
+}
+@media (min-width: 500px){
+    .s2, .s3, .s4, .s5 {
+        flex: 1 1 50%;
+        height: 250px;
+        transition: all 0.3s;
+    }
+} 
+
+@media (min-width: 800px){
+    .s1{
+         flex: 1 1 70%;
+    }
+    .s2{
+        flex: 1 1 30%;
+        height: 300px;
+    }
+    .s3, .s4, .s5{
+        flex:1 1 33.3%;
+        height: 50vh;
+    }
+}   
+@media(min-width: 900px){
+    .container{
+        width: 900px;
+        margin: 0 auto;
+    }
+}
+
+

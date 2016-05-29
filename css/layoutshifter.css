@@ -1,0 +1,133 @@
+body{
+    margin: 0 auto;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+*{
+    color: white;
+    box-sizing: border-box;
+
+}
+/*.m{
+    border: 3px solid yellow;
+
+}*/
+
+
+.header{
+    height: 120px;
+    width: 100%;
+    background: #000321;
+    border-bottom: 2px solid #D80FC3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.header--trabajos{
+    height: 120px;
+    width: 100%;
+    background: #290535;
+    border-bottom: 0px solid #B54E03;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    
+}
+
+.mag{
+      width: 99px;
+    
+}
+
+.perfil{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 0 auto; 
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.nav{
+    width: 100%;
+    padding: 1em;
+    height: 100px;
+    background: #0A5676;
+    text-align: center;
+    font-size: 14px;
+    /* poner hasta al final para enseñar border box sizing*/
+    box-sizing: border-box;
+}
+
+.container-inner{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.s1{
+    background: #ff004e;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.s2{
+    background: #25020f;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s3{
+    background: #9e1e4c;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.b{
+    background: rgba(256,256,256, 0.3);
+    padding: 0px 15px;
+    border-radius: 5px;
+}
+@media (min-width:500px){
+    .nav{
+        height: 150px;
+        transition: all 0.3s;
+    }
+}
+@media (min-width:800px){
+    .container{
+        width: 800px;
+        margin: 0 auto ;
+        
+    }
+    .nav{
+        width: 30%;
+        height: 100vh;
+        font-size: 12px;
+        
+    }
+    .container-inner{
+        width: 70%;
+        transition:  transform all 0.3s ease-out;
+
+    }
+
+}

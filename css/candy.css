@@ -1,0 +1,443 @@
+body{
+    background: #f4f4f4; ;
+    font-family: 'Alegreya SC', serif;
+    /*font-weight: bold;*/
+    color: #FF0084;
+}
+*{
+    box-sizing: border-box;
+    color: #067E86;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-family:game,arial;
+    color: #067E86;
+    font-weight: lighter;
+    font-size: 24px;
+}
+.header{
+    height: 120px;
+    width: 100%;
+    background: #000321;
+    border-bottom: 2px solid #D80FC3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.header--trabajos{
+    height: 120px;
+    width: 100%;
+    background: #290535;
+    border-bottom: 0px solid #B54E03;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    
+}
+
+.mag{
+      width: 99px;
+    
+}
+
+.perfil{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 0 auto; 
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.artboard{
+    width: 800px;
+    height: 600px;
+    background: #FFD600;   
+    box-shadow: 0px 3px 20px rgba(0,0,0,0.2);
+    border-radius: 3px; 
+    margin:50px auto;
+    border:20px white solid;
+    position: relative;
+    overflow: hidden
+}
+
+.star--all{
+    position: relative;
+    left: 81px;
+}
+.star{
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: #F7F5F4;
+    border-radius: 50%;
+    top: 20px;
+    left: 137px;
+}
+.a{
+    width: 5px;
+    height: 5px;
+    top: 66px;
+    left: 200px;
+}
+.b{
+    width: 5px;
+    height: 5px;
+    top: 47px;
+    left: 350px;
+}
+.c{
+    width: 5px;
+    height: 5px;
+    top: 300px;
+    left: 500px;
+}
+.d{
+    width: 5px;
+    height: 5px;
+    top: 500px;
+    left: 333px;
+}
+.e{
+    width: 5px;
+    height: 5px;
+    top: 400px;
+    left: 50px;
+}
+.f{
+    width: 5px;
+    height: 5px;
+    top: 560px;
+    left: 200px;
+}
+.g{
+    width: 5px;
+    height: 5px;
+    top: 500px;
+    left: 500px;
+}
+.h{
+    top: 400px;
+    left: 400px;
+}
+.i{
+    top: 300px;
+    left: 150px;
+}
+.j{
+    top: 500px;
+    left: 100px;
+}
+.pipe{
+    position: absolute;
+    width: 15px;
+    height: 300px;
+    background: #EBEBEB;
+    top: 64px;
+    left: 56px;
+    border-radius: 15px;
+    border:0px solid #313131;
+    overflow: hidden;
+}
+.pipe:before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 300px;
+    top: 0px;
+    left: -6px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.9)
+}
+
+
+.planets{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 89px;
+    left: 36px;
+}
+.saturn{
+    position: relative;
+    top: 43px;
+    left: 287px;
+}
+.saturn--planet{
+    width: 120px;
+    height: 120px;
+    background: #F20078;   
+    border-radius: 50%;
+    border:5px #AC0055 solid;
+    position: relative;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+    transform: rotate(-21deg);
+    transform: scale(2);
+}
+.saturn--planet:before{
+    content: "";
+    box-shadow: 0px 0px 86px rgba(0,0,0,0.3);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: -4px;
+    left: -23px;
+}
+
+
+.saturn--line{
+    width: 100px;
+    height:8px;
+    background: #A60C5D;   
+    border-radius: 3px; 
+    border-radius: 6px;
+    /*border:5px #AC0055 solid;*/
+    position: absolute;
+    top: 34px;
+    left: 64px;
+}
+.sla{
+   top: 64px;
+    left: 71px; 
+}
+.slb{
+    top: 49px;
+    left: 52px;
+}
+.slc{
+    top: 19px;
+    left: 74px;
+}
+.sld{
+    top: 79px;
+    left: 62px;
+}
+.sle{
+    top: 94px;
+    left: 73px;
+}
+.slf{
+    top: 6px;
+    left: 68px;
+}
+.slg{
+    top: 58px;
+    left: -74px;
+    background: #FF50B7;
+}
+.slh{
+    top: 40px;
+    left: -82px;
+    background: #FF50B7;
+}
+.sli{
+    top: 74px;
+    left: -60px;
+    background: #FF50B7;
+}
+.slj{
+    top: 92px;
+    left: -67px;
+    background: #FF50B7;
+}
+.slk{
+    top: 26px;
+    left: -74px;
+    background: #FF50B7;
+}
+.sll{
+    top: 10px;
+    left: -66px;
+    background: #FF50B7;
+}
+.slm{
+    top: 105px;
+    left: -53px;
+    background: #FF50B7;
+}
+
+#fire{
+    animation: fire 1.5s infinite; 
+    transition: all 0.2s;
+}
+
+@keyframes fire{
+    0%{
+        opacity:0.5;
+    }    
+    20%{
+        opacity:1;
+    }
+    40%{
+        opacity:0.3;
+    }
+    60%{
+        opacity:0.9;
+    }
+    80%{
+        opacity:0.6;
+    }
+    100%{
+        opacity:0.8;
+    }
+}
+
+.astronauta{
+    animation: astronauta 3.5s infinite; 
+}
+
+@keyframes astronauta{
+    0%{
+        transform: translate3d(0px,0px,0px) ease;
+    }
+    30%{
+        transform: translate3d(10px,10px,0px);
+    }
+    55%{
+        transform: translate3d(-10px,10px,0px);
+    }
+    70%{
+        transform: translate3d(5px,5px,0px);
+    }
+    100%{
+        transform: translate3d(0px,0px,0px);
+    }
+}
+
+#saturnrotate{
+    animation: saturnrotate 3.5s infinite; 
+}
+
+@keyframes saturnrotate{
+    0%{
+        transform: rotate(-3deg);
+    }
+    50%{
+        transform: rotate(3deg);
+    }
+    100%{
+        transform: rotate(-3deg);
+    }
+    
+}
+
+
+#saturnmove{
+    animation: saturnmove 3.5s infinite; 
+    transition: all 0.2s;
+}
+@keyframes saturnmove{
+    
+    0%{
+        transform: translate3d(0px,0px,0px) ease;
+    }
+    35%{
+        transform: translate3d(-3px,5px,0px);
+    }
+    59%{
+        transform: translate3d(2px,-2px,0px);
+    }
+    78%{
+        transform: translate3d(-3px,2px,0px);
+    }
+    100%{
+        transform: translate3d(0px,0px,0px);
+    }
+}
+
+
+
+#plutonrotate{
+    animation: plutonrotate 4s infinite; 
+}
+
+@keyframes plutonrotate{
+    0%{
+        transform: rotate(-5deg);
+    }
+    50%{
+        transform: rotate(5deg);
+    }
+    100%{
+        transform: rotate(-5deg);
+    }
+    
+}
+
+
+#plutonmove{
+    animation: plutonmove 4s infinite; 
+    transition: all 0.2s;
+}
+@keyframes plutonmove{
+    
+    0%{
+        transform: translate3d(0px,0px,0px) ease;
+    }
+    35%{
+        transform: translate3d(-3px,5px,0px);
+    }
+    59%{
+        transform: translate3d(2px,-2px,0px);
+    }
+    78%{
+        transform: translate3d(-3px,2px,0px);
+    }
+    100%{
+        transform: translate3d(0px,0px,0px);
+    }
+}
+
+
+#marterotate{
+    animation: marterotate 3s infinite; 
+}
+
+@keyframes marterotate{
+    0%{
+        transform: rotate(-2deg);
+    }
+    50%{
+        transform: rotate(2deg);
+    }
+    100%{
+        transform: rotate(-2deg);
+    }
+    
+}
+
+
+#martemove{
+    animation: martemove 3.6s infinite; 
+    transition: all 0.2s;
+}
+@keyframes martemove{
+    
+    0%{
+        transform: translate3d(0px,0px,0px) ease;
+    }
+    35%{
+        transform: translate3d(-2px,2px,0px);
+    }
+    59%{
+        transform: translate3d(1px,-2px,0px);
+    }
+    78%{
+        transform: translate3d(-2px,2px,0px);
+    }
+    100%{
+        transform: translate3d(0px,0px,0px);
+    }
+}
+
+
+

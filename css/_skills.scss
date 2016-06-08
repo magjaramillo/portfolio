@@ -42,9 +42,12 @@
     
 }
 
+
+
 .cont{
     margin:0 auto;
     width: 95%;
+    margin-top: 32px; 
     display: flex;
     /*flex-flow: wrap;*/
     justify-content: space-between;
@@ -54,7 +57,7 @@
 }
 .cont--skills{
     background: #2D2D2D;
-    height: 720px;
+    height: 760px;
     flex:1 1 35% ;
     margin: 0 2em 0 3em;
     padding: 3em 2em 2em 2em;
@@ -121,10 +124,14 @@ span.sk.icon-star-full{
     margin-top: 12px;
 }
 
-
+.tit{
+    
+    
+}
 
 .cont--skills{
      display: flex;
+     
 }
 
 .one{
@@ -132,6 +139,7 @@ span.sk.icon-star-full{
 }
 .programas-left{
   flex:1 1 40%;  
+  
 }
 .programas-right{
     display: flex;
@@ -206,4 +214,26 @@ span.sk.icon-star-full{
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
     background-color: transparent;
+}
+
+
+
+
+.n-v{
+    visibility: hidden;
+}
+.img-programas{
+    visibility: hidden;
+}
+.star-programas{
+    visibility: hidden;
+}
+.estilo-programas{
+    background: #FFF600;
+    padding: 3px 8px;
+    color: #3D3D3D;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 3px;
 }

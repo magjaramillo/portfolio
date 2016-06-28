@@ -1137,6 +1137,14 @@
   padding-top: 0.5em;
   color: #8E8E8E; }
 
+.trabajosm:hover {
+  color: #7004AE;
+  transition: all .3s ease; }
+
+.nav-trabajos {
+  text-align: center;
+  padding-left: 2.9em; }
+
 .section--trabajos {
   margin: 3em auto;
   width: 95%;
@@ -1246,6 +1254,14 @@
   font-family: 'Lobster', cursive;
   padding-top: 0.5em;
   color: #8E8E8E; }
+
+.skillsm:hover {
+  color: #7004AE;
+  transition: all .3s ease; }
+
+.nav-skills {
+  text-align: center;
+  padding-left: 1em; }
 
 .titles {
   margin: 0em auto;
@@ -1589,6 +1605,11 @@ h1 {
 
 .trabajos a:hover {
   color: #FFFFFF; }
+
+.navegacion {
+  display: inline-block;
+  text-align: center;
+  margin-right: 2.5em; }
 
 .artboard {
   width: 800px;

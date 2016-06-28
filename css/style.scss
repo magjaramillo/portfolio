@@ -164,6 +164,7 @@ h1{
     font-size: 16px;
     transition: all 0.2s;
     color: #FFFFFF;
+
 }
 .skills a:hover{
     color: #ECEAEA;
@@ -185,6 +186,12 @@ h1{
 }
 .trabajos a:hover{
     color: #FFFFFF;
+}
+
+.navegacion{
+    display: inline-block;
+    text-align: center;
+    margin-right: 2.5em;
 }
 
 .artboard{

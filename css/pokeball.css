@@ -279,9 +279,47 @@ h1{
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  box-shadow: -2px 0px 10px rgba(0,0,0,0.4);
+  box-shadow: -2px 0px 7px rgba(255,0,0,0.8);
+  animation: pokeinside 1.1s infinite ; 
 
 }
+.button-inner:after{
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  box-shadow: -1px 1px 31.7px rgba(255,0,0,0.9);
+  animation: pokeinside 1.1s infinite ; 
+
+}
+
+
+
+ 
+
+@keyframes pokeinside{
+    0%{
+        opacity:0.0;
+    }    
+
+    30%{
+        opacity:0;
+    }
+    50%{
+        opacity:1;
+    }
+    80%{
+        opacity:0;
+    }
+    100%{
+        opacity:0;
+    }
+}
+
+
 .button-inner-press{
   position: absolute;
   left: 9px;
@@ -1495,7 +1533,7 @@ h1{
 }
 
 
-.flecha{
+/*.flecha{
   position: absolute;
   left:-144px;
   top: 252px;
@@ -1514,7 +1552,7 @@ h1{
   background: #035CFF;
   border-radius: 10px;
 
-}
+}*/
 .escoge{
   position: absolute;
   left:-215px;

@@ -1,0 +1,1546 @@
+body{
+    background: #eee;
+}
+*{
+    box-sizing: border-box;
+}
+h1{
+    font-family:game,arial;
+    color: #A80000;
+    font-weight: lighter;
+    font-size: 28px;
+}
+
+.header{
+    height: 120px;
+    width: 100%;
+    background: #000321;
+    border-bottom: 2px solid #D80FC3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.header--trabajos{
+    height: 120px;
+    width: 100%;
+    background: #290535;
+    border-bottom: 0px solid #B54E03;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    
+}
+
+.mag{
+      width: 99px;
+    
+}
+
+.perfil{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 0 auto; 
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.artboard{
+    width: 800px;
+    height: 600px;
+    /*background: #EEC371;   */
+    box-shadow: 0px 3px 20px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    margin:50px auto;
+    border:20px white solid;
+    position: relative;
+    overflow: hidden
+}
+.pokeball{
+  position: relative;
+  left: 257px;
+  top: 142px;
+  height: 120px;
+  width: 238px;
+
+  /*border-radius:50%;*/
+
+}
+.pokeball-up{
+  position: absolute;
+  left: 0px;
+  top: -0px;
+  width: 278px;
+  height: 140px;
+  background: transparent;
+  overflow: hidden;
+  /*border-radius:50%;*/
+
+}
+.pokeball-up:before{
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -0px;
+  width: 260px;
+  height: 260px;
+  background: #e82504;
+  border:8px solid #244356;
+  border-radius:50%;
+   overflow: hidden;
+}
+.pokeball-up:after{
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 131px;
+  width: 272px;
+  height: 10px;
+  background: #244356;
+
+}
+.pokeball-up-shadow{
+  position: absolute;
+  left: 0px;
+  top: 11px;
+  width: 260px;
+  height: 260px;
+  border-radius:50%;
+  box-shadow: 7px -10px 2px rgba(0,0,0,0.2);
+}
+
+
+.pokeball-down{
+  position: absolute;
+  left: -4px;
+  top: 140px;
+  width: 279px;
+  height: 140px;
+  background: transparent;
+  overflow: hidden;
+  transform: rotate(180deg);
+}
+.pokeball-down:before{
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -0px;
+  width: 260px;
+  height: 260px;
+  background: #F2F2F2;
+  border:8px solid #244356;
+  border-radius:50%;
+
+}
+
+.pokeball-down:after{
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 130px;
+  width: 272px;
+  height: 10px;
+  background: #244356;
+}
+.pokeball-down-shadow{
+  position: absolute;
+  left: 16px;
+  top: 14px;
+  width: 260px;
+  height: 260px;
+  border-radius:50%;
+  box-shadow: 0px -10px 13px rgba(0,0,0,0.2);
+}
+.pokemones{
+  position: relative;
+  /*left: -197px;*/
+  left: 137px;
+  top: 93px;
+  width: 20px;
+  height: 20px;
+  background: pink;
+  animation: pokemones 3s infinite;
+}
+
+
+@keyframes pokemones{
+    0%{
+        transform: rotate(0deg); ease;
+    }
+    30%{
+        transform: rotate(2deg);;
+    }
+    50%{
+        transform: rotate(0deg);;
+    }
+    70%{
+        transform: rotate(5deg);;
+    }
+    100%{
+        transform: rotate(0deg);;
+    }
+}
+.pokemonesNone{
+  display: none;
+}
+.poke1{
+  position: absolute;
+  left: 280px;
+  top: 200px;
+  width: 100px;
+  height: 100px;
+  background: green;
+}
+.cuerpo1{
+  position: absolute;
+  /*left: 180px;
+  top: 100px;*/
+  width: 100px;
+  height: 100px;
+  background: rgb(205, 20, 164);
+}
+
+.poke2{
+  position: absolute;
+  left: 280px;
+  top: 200px;
+  width: 100px;
+  height: 100px;
+  background: blue;
+}
+.poke3{
+  position: absolute;
+  left: 280px;
+  top: 200px;
+  width: 100px;
+  height: 100px;
+  background: pink;
+}
+.belt{
+  position: absolute;
+  left: 280px;
+  top: 340px;
+  width: 200px;
+  height: 20px;
+  background: black;
+}
+.button{
+  position: absolute;
+  left: 102px;
+  top: 105px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #F2F2F2;
+  border:8px solid #244356;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+.buttonDown{
+  position: absolute;
+  left: 104px;
+  top: 105px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #F2F2F2;
+  border:8px solid #244356;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+
+.button-shadow{
+  position: absolute;
+  left: -11px;
+  top: -4px;
+  width: 71px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 3.7px -8px 0.1px rgba(0,0,0,0.2);
+}
+.button-inner{
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #DEDCDC;
+}
+.button-inner:before{
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  box-shadow: -2px 0px 10px rgba(0,0,0,0.4);
+
+}
+.button-inner-press{
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #f70000;
+}
+.button-inner-press:before{
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 13px rgba(251,121,56,0.9);
+}
+.button-inner-press:after{
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 3.2px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  box-shadow: 3px -2px 25px rgba(0,0,0,0.7);
+
+}
+
+#pokeballUp{
+  transform: transparent;
+  transition: all 0.6s ease;
+}
+#pokeballDown{
+  transform: transparent;
+  transition: all 0.6s ease;
+}
+#pokeballDown{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+
+}
+
+.pokeball-up-move{
+  transform: translate3d(78px, -94px, 0px ) rotate(40deg);
+}.pokeball-down-move{
+  transform: translate3d(-33px, 100px, 0px ) rotate(-20deg);
+}
+.button-move{
+  transform: translate3d(33px, -118px, 0px ) rotate(40deg);
+}
+
+.face{
+  position: absolute;
+  /*left: 280px;
+  top: 200px;*/
+  width: 150px;
+  height: 150px;
+  background:rgb(0, 240, 255);
+}
+
+
+/* PIKACHU PIKACHU PIKACHU PIKACHU PIKACHU PIKACHU PIKACHU PIKACHU PIKACHU PIKACHU*/
+.pikaFace{
+  position: absolute;
+  left: -55px;
+  top: -26px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #FFD800;
+  border: 5px solid #181818;
+}
+.pikaFaceBase{
+  position: absolute;
+  left: -51px;
+  top: -22px;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  background: #FFD800;
+
+}
+.pikaOrejaIzq{
+  position: absolute;
+  left: -54px;
+  top: -55px;
+  width: 35px;
+  height: 100px;
+  border-top-left-radius: 25px 106px;
+  border-top-right-radius: 25px 110px;
+  background: #FFD800;
+  transform: rotate(-36deg);
+  border: 5px solid #181818;
+  overflow: hidden;
+  animation: pikaOrejaIzq 2s infinite;
+}
+@keyframes pikaOrejaIzq{
+    0%{
+        transform: rotate(-45deg); ease;
+    }
+    5%{
+        transform: rotate(-55deg);;
+    }
+    10%{
+        transform: rotate(-45deg);;
+    }
+    70%{
+        transform: rotate(-50deg);;
+    }
+    100%{
+        transform: rotate(-45deg);;
+    }
+}
+
+.pikaOrejaIzq:before{
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -84px;
+  width: 35px;
+  height: 100px;
+  border-top-left-radius: 25px 106px;
+  border-top-right-radius: 25px 110px;
+  background: #1A1A1A;
+  transform: rotate(0deg);
+}
+.pikaOrejaDer{
+  position: absolute;
+  left: 16px;
+  top: -55px;
+  width: 35px;
+  height: 100px;
+  border-top-left-radius: 22px 106px;
+  border-top-right-radius: 22px 110px;
+  background: #FFD800;
+  transform: rotate(45deg);
+  border: 5px solid #181818;
+  overflow: hidden;
+  animation: pikaOrejaDer 3s infinite;
+
+}
+
+@keyframes pikaOrejaDer{
+    0%{
+        transform: rotate(45deg); ease;
+    }
+    5%{
+        transform: rotate(55deg);;
+    }
+    10%{
+        transform: rotate(45deg);;
+    }
+    70%{
+        transform: rotate(50deg);;
+    }
+    100%{
+        transform: rotate(45deg);;
+    }
+}
+
+
+
+.pikaOrejaDer:before{
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -84px;
+  width: 35px;
+  height: 100px;
+  border-top-left-radius: 22px 106px;
+  border-top-right-radius: 22px 110px;
+  background: black;
+  transform: rotate(0deg);
+}
+.pikaOjoIzq{
+  position: absolute;
+  left: -37px;
+  top: 14px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #0E0E0E;
+
+}
+.pikaOjoIzq:before{
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #F5F5F5;
+}
+.pikaOjoDer{
+  position: absolute;
+  left: 12px;
+  top: 14px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #0E0E0E;
+}
+.pikaOjoDer:before{
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #F5F5F5;
+}
+.pikaNariz{
+  position: absolute;
+  left: -17px;
+  top: 26px;
+  width:10px;
+  height:10px;
+  border-top:3px solid #0E0E0E;
+  border-left:3px solid #0E0E0E;
+  border-radius:16px 10px 0 10px;
+  -webkit-transform:rotate(225deg);
+}
+.pikaNariz:before{
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 5px;
+  width:8px;
+  height:8px;
+  border-top:3px solid #0E0E0E;
+  border-left:3px solid #0E0E0E;
+  border-radius:16px 10px 0 10px;
+}
+.pikaBoca{
+  position: absolute;
+  left: -11.3px;
+  top: 31px;
+  width: 10px;
+  height: 14px;
+  border-radius: 50%;
+  background: #FF2D2D;
+}
+.pikaMejillaIzq{
+  position: absolute;
+  left: -42px;
+  top: 33px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #FF2D2D;
+}
+.pikaMejillaDer{
+  position: absolute;
+  left: 13px;
+  top: 33px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #FF2D2D;
+}
+
+/* SQUIERTLE SQUIERTLE SQUIERTLE SQUIERTLE SQUIERTLE SQUIERTLE SQUIERTLE SQUIERTLE SQUIERTLE */
+.squiFace{
+  position: absolute;
+  left: -55px;
+  top: -26px;
+  width: 100px;
+  height: 104px;
+  border-radius: 50%;
+  background: #00AEFF;
+  border: 5px solid #181818;
+
+}
+.squiFace:before{
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: -4px;
+  width: 100px;
+  height: 104px;
+  border-radius: 50%;
+  box-shadow: 10px 0px 10px rgba(0,0,0,0.2);
+}
+.squiOjoIzq{
+  position: absolute;
+  left: -37px;
+  top: 14px;
+  width: 19px;
+  height: 22px;
+  border-radius: 30px 30px 13px 31px ;
+  background: #0E0E0E;
+  overflow: hidden;
+
+}
+.squiOjoIzq:before{
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 4px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #F5F5F5;
+  animation: squiOjoIzq 2s infinite;
+
+}
+
+
+
+
+@keyframes squiOjoIzq{
+    0%{
+        transform: translate3d(0px,0px,0px) ease;
+    }
+    30%{
+        transform: translate3d(0px,0px,0px);
+    }
+    55%{
+        transform: translate3d(3px,3px,0px);
+    }
+    70%{
+        transform: translate3d(0px,0px,0px);
+    }
+    100%{
+        transform: translate3d(0px,0px,0px);
+    }
+}
+.squiOjoDer{
+  position: absolute;
+  left: 10px;
+  top: 14px;
+  width: 19px;
+  height: 22px;
+  border-radius: 30px 30px 31px 13px ;
+  background: #0E0E0E;
+}
+.squiOjoDer:before{
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #F5F5F5;
+  animation: squiOjoDer 2s infinite;
+}
+@keyframes squiOjoDer{
+    0%{
+        transform: translate3d(0px,0px,0px) ease;
+    }
+    30%{
+        transform: translate3d(0px,0px,0px);
+    }
+    55%{
+        transform: translate3d(2px,3px,0px);
+    }
+    70%{
+        transform: translate3d(0px,0px,0px);
+    }
+    100%{
+        transform: translate3d(0px,0px,0px);
+    }
+}
+.squiNariz{
+  position: absolute;
+  left: -30px;
+  top: 37px;
+  width:24px;
+  height:23px;
+  border-top:3px solid #0E0E0E;
+  border-left:3px solid #0E0E0E;
+  border-radius:45px 11px 0 10px;
+  -webkit-transform:rotate(44deg);
+}
+.squiNariz:before{
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: -24px;
+  width:19px;
+  height:20px;
+  border-top:3px solid #0E0E0E;
+  border-left:3px solid #0E0E0E;
+  border-radius:45px 11px 0 10px;
+
+}
+.squiBoca{
+  position: absolute;
+  left: -25px;
+  top: 26.4px;
+  width:42px;
+  height:42px;
+  border-top:3px solid #0E0E0E;
+  border-left:3px solid #0E0E0E;
+  border-radius:64px 11px 0 10px;
+  -webkit-transform:rotate(-137deg);
+}
+.squiLengua{
+  position: absolute;
+  left: -18px;
+  top: 51px;
+  width: 28px;
+  height: 9px;
+  border-radius: 50%;
+  background: #FF6060;
+}
+.squiMejillaIzq{
+  position: absolute;
+  left: -44px;
+  top: 34px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #3ABCFF;
+}
+.squiMejillaDer{
+  position: absolute;
+  left: 22px;
+  top: 35px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #3ABCFF;
+}
+
+.squiCejas{
+  position: absolute;
+  left: -12px;
+  top: 31px;
+  width:2px;
+  height:7px;
+  border-radius: 10px;
+  background: #161616;
+  transform: rotate(-39deg);
+}.squiCejas:before{
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 9px;
+  width:2px;
+  height:7px;
+  border-radius: 10px;
+  background: #161616;
+  transform: rotate(-100deg);
+}
+.squiManchas{
+  position: absolute;
+  left: -33px;
+  top: -10px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #118fce;
+}
+.squiManchas:before{
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: -4px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #118fce;
+}
+
+
+/* CHARMANDER CHARMANDER CHARMANDER CHARMANDER CHARMANER*/
+
+.charFace{
+  position: absolute;
+  left: -55px;
+  top: -26px;
+  width: 100px;
+  height: 111px;
+  border-radius: 50%;
+  background: #ff005c;
+  border: 5px solid #181818;
+
+}
+.charFace:before{
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: -4px;
+  width: 100px;
+  height: 104px;
+  border-radius: 50%;
+  box-shadow: 10px 0px 10px rgba(0,0,0,0.2);
+}
+.charOjoIzq{
+  position: absolute;
+  left: -39px;
+  top: 14px;
+  width: 19px;
+  height: 25px;
+  border-radius: 30px 96px 13px 97px ;
+  background:#F1F1F1;
+  overflow: hidden;
+
+}
+.charOjoIzq:before{
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 0px;
+  width: 17px;
+  height: 27px;
+  border-radius: 50%;
+  background: #2EB8FF;
+  animation: charOjoIzq 2s infinite;
+
+}
+.charOjoIzq:after{
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 1px;
+  width: 15px;
+  height: 21px;
+  border-radius: 50%;
+  background: #1B1B1B;
+  animation: charOjoIzq 2s infinite;
+}
+
+
+.charOjoDer{
+  position: absolute;
+  left: 10px;
+  top: 14px;
+  width: 19px;
+  height: 25px;
+  border-radius: 96px 30px 97px 13px ;
+  background: #F1F1F1;
+  overflow: hidden;
+}
+.charOjoDer:before{
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 0px;
+  width: 17px;
+  height: 27px;
+  border-radius: 50%;
+  background: #2EB8FF;
+  animation: charOjoIzq 2s infinite;
+}
+.charOjoDer:after{
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: 1px;
+  width: 15px;
+  height: 21px;
+  border-radius: 50%;
+  background: #1B1B1B;
+  animation: charOjoIzq 2s infinite;
+}
+
+@keyframes squiOjoDer{
+    0%{
+        transform: translate3d(0px,0px,0px) ease;
+    }
+    30%{
+        transform: translate3d(0px,0px,0px);
+    }
+    55%{
+        transform: translate3d(2px,3px,0px);
+    }
+    70%{
+        transform: translate3d(0px,0px,0px);
+    }
+    100%{
+        transform: translate3d(0px,0px,0px);
+    }
+}
+/*.charNariz{
+  position: absolute;
+  left: -30px;
+  top: 37px;
+  width:24px;
+  height:23px;
+  border-top:3px solid #0E0E0E;
+  border-left:3px solid #0E0E0E;
+  border-radius:45px 11px 0 10px;
+  -webkit-transform:rotate(44deg);
+}
+.charNariz:before{
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: -24px;
+  width:19px;
+  height:20px;
+  border-top:3px solid #0E0E0E;
+  border-left:3px solid #0E0E0E;
+  border-radius:45px 11px 0 10px;
+
+}*/
+/*.charBoca{
+  position: absolute;
+  left: -27px;
+  top: 24.4px;
+  width:42px;
+  height:42px;
+  border-top:3px solid #0E0E0E;
+  border-left:3px solid #0E0E0E;
+  border-radius:60px 11px 0 8px;
+  -webkit-transform:rotate(-133deg);
+}*/
+
+.charBoca{
+  position: absolute;
+  left: -36px;
+  top: 55px;
+  width:30px;
+  height:2px;
+  background: #32022A;
+  transform: rotate(12deg);
+
+}
+.charBoca:before{
+  content: "";
+  position: absolute;
+  left: 28px;
+  top: -4.4px;
+  width:30px;
+  height:2px;
+  background: #32022A;
+  transform: rotate(-18deg);
+
+}
+
+.charMejillaIzq{
+  position: absolute;
+  left: -28px;
+  top: 56px;
+  border-top:5px solid #F4F4F4;
+  border-left:5px solid transparent;
+  border-right: 4px solid transparent;
+  transform: rotate(10deg);
+
+}
+.charMejillaDer{
+  position: absolute;
+  left: 7px;
+  top: 57px;
+  border-top:5px solid #F4F4F4;
+  border-left:5px solid transparent;
+  border-right: 4px solid transparent;
+  transform: rotate(-10deg);
+}
+
+.charCejas{
+  position: absolute;
+  left: -12px;
+  top: 39px;
+  width:2px;
+  height:5px;
+  border-radius: 10px;
+  background: #161616;
+  transform: rotate(-39deg);
+}.charCejas:before{
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 9px;
+  width:2px;
+  height:5px;
+  border-radius: 10px;
+  background: #161616;
+  transform: rotate(-100deg);
+}
+
+
+/*.charManchas{
+  position: absolute;
+  left: -33px;
+  top: -10px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #118fce;
+}
+.charManchas:before{
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: -4px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #118fce;
+}*/
+
+
+
+
+
+
+.pikaFace{
+  position: absolute;
+  left: -55px;
+  top: -26px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #FFD800;
+  border: 5px solid #181818;
+}
+.pikaFaceBase{
+  position: absolute;
+  left: -51px;
+  top: -22px;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  background: #FFD800;
+
+}
+.pikaOrejaIzq{
+  position: absolute;
+  left: -54px;
+  top: -55px;
+  width: 35px;
+  height: 100px;
+  border-top-left-radius: 25px 106px;
+  border-top-right-radius: 25px 110px;
+  background: #FFD800;
+  transform: rotate(-36deg);
+  border: 5px solid #181818;
+  overflow: hidden;
+  animation: pikaOrejaIzq 2s infinite;
+}
+@keyframes pikaOrejaIzq{
+    0%{
+        transform: rotate(-45deg); ease;
+    }
+    5%{
+        transform: rotate(-55deg);;
+    }
+    10%{
+        transform: rotate(-45deg);;
+    }
+    70%{
+        transform: rotate(-50deg);;
+    }
+    100%{
+        transform: rotate(-45deg);;
+    }
+}
+
+.pikaOrejaIzq:before{
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -84px;
+  width: 35px;
+  height: 100px;
+  border-top-left-radius: 25px 106px;
+  border-top-right-radius: 25px 110px;
+  background: #1A1A1A;
+  transform: rotate(0deg);
+}
+.pikaOrejaDer{
+  position: absolute;
+  left: 16px;
+  top: -55px;
+  width: 35px;
+  height: 100px;
+  border-top-left-radius: 22px 106px;
+  border-top-right-radius: 22px 110px;
+  background: #FFD800;
+  transform: rotate(45deg);
+  border: 5px solid #181818;
+  overflow: hidden;
+  animation: pikaOrejaDer 3s infinite;
+
+}
+
+@keyframes pikaOrejaDer{
+    0%{
+        transform: rotate(45deg); ease;
+    }
+    5%{
+        transform: rotate(55deg);;
+    }
+    10%{
+        transform: rotate(45deg);;
+    }
+    70%{
+        transform: rotate(50deg);;
+    }
+    100%{
+        transform: rotate(45deg);;
+    }
+}
+
+/* BULBASOR BULBASOR BULBASOR BULBASOR BULBASOR BULBASOR BULBASOR BULBASOR BULBASOR BULBASOR BULBASOR BULBASOR BULBASOR */
+
+.bulFace{
+  position: absolute;
+  left: -55px;
+  top: -26px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #3EEB9C;
+  border: 5px solid #181818;
+}
+.bulFaceBase{
+  position: absolute;
+  left: -51px;
+  top: -22px;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  background: #3EEB9C;
+
+}
+.bulOrejaIzq{
+  position: absolute;
+  left: -28px;
+  top: -39px;
+  width: 35px;
+  height: 100px;
+  border-top-left-radius: 25px 106px;
+  border-top-right-radius: 25px 110px;
+  background: #3EEB9C;
+  transform: rotate(19deg);
+  border: 5px solid #181818;
+  overflow: hidden;
+  animation: bulOrejaIzq 2s infinite;
+}
+@keyframes bulOrejaIzq{
+    0%{
+        transform: rotate(-45deg); ease;
+    }
+    5%{
+        transform: rotate(-55deg);;
+    }
+    10%{
+        transform: rotate(-45deg);;
+    }
+    70%{
+        transform: rotate(-50deg);;
+    }
+    100%{
+        transform: rotate(-45deg);;
+    }
+}
+
+
+.bulOrejaDer{
+  position: absolute;
+  left: -14px;
+  top: -38px;
+  width: 35px;
+  height: 100px;
+  border-top-left-radius: 22px 106px;
+  border-top-right-radius: 22px 110px;
+  background: #3EEB9C;
+  transform: rotate(45deg);
+  border: 5px solid #181818;
+  overflow: hidden;
+  animation: bulOrejaDer 3s infinite;
+
+}
+
+@keyframes bulOrejaDer{
+    0%{
+        transform: rotate(45deg); ease;
+    }
+    5%{
+        transform: rotate(55deg);;
+    }
+    10%{
+        transform: rotate(45deg);;
+    }
+    70%{
+        transform: rotate(50deg);;
+    }
+    100%{
+        transform: rotate(45deg);;
+    }
+}
+
+
+
+
+
+.bulMejillaIzq{
+  position: absolute;
+  left: -33px;
+  top: -9px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #2cc37e;
+}
+.bulMejillaDer{
+  position: absolute;
+  left: -10px;
+  top: -8px;
+  width: 18px;
+  height: 23px;
+  border-radius: 50%;
+  background: #2cc37e;
+}
+
+
+.bulCejas{
+  position: absolute;
+  left: -12px;
+  top: 31px;
+  width:2px;
+  height:7px;
+  border-radius: 10px;
+  background: #161616;
+  transform: rotate(-39deg);
+}.bulCejas:before{
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 9px;
+  width:2px;
+  height:7px;
+  border-radius: 10px;
+  background: #161616;
+  transform: rotate(-100deg);
+}
+
+.bulOjoIzq{
+  position: absolute;
+  left: -37px;
+  top: 14px;
+  width: 19px;
+  height: 22px;
+  border-radius: 30px 30px 13px 31px ;
+  background: #0E0E0E;
+  overflow: hidden;
+
+}
+.bulOjoIzq:before{
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 4px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #F5F5F5;
+  animation: bulOjoIzq 2s infinite;
+
+}
+
+
+
+
+@keyframes bulOjoIzq{
+    0%{
+        transform: translate3d(0px,0px,0px) ease;
+    }
+    30%{
+        transform: translate3d(0px,0px,0px);
+    }
+    55%{
+        transform: translate3d(3px,3px,0px);
+    }
+    70%{
+        transform: translate3d(0px,0px,0px);
+    }
+    100%{
+        transform: translate3d(0px,0px,0px);
+    }
+}
+.bulOjoDer{
+  position: absolute;
+  left: 10px;
+  top: 14px;
+  width: 19px;
+  height: 22px;
+  border-radius: 30px 30px 31px 13px ;
+  background: #0E0E0E;
+}
+.bulOjoDer:before{
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #F5F5F5;
+  animation: bulOjoDer 2s infinite;
+}
+@keyframes bulOjoDer{
+    0%{
+        transform: translate3d(0px,0px,0px) ease;
+    }
+    30%{
+        transform: translate3d(0px,0px,0px);
+    }
+    55%{
+        transform: translate3d(2px,3px,0px);
+    }
+    70%{
+        transform: translate3d(0px,0px,0px);
+    }
+    100%{
+        transform: translate3d(0px,0px,0px);
+    }
+}
+
+.bulBoca{
+  position: absolute;
+  left: -35px;
+  top: 47px;
+  width:30px;
+  height:2px;
+  background: #32022A;
+  transform: rotate(12deg);
+
+}
+.bulBoca:before{
+  content: "";
+  position: absolute;
+  left: 28px;
+  top: -4.4px;
+  width:30px;
+  height:1.5px;
+  background: #32022A;
+  transform: rotate(-18deg);
+
+}
+/*MAG JARAMILLO  MAG JARAMILLO  MAG JARAMILLO  MAG JARAMILLO  MAG JARAMILLO  MAG JARAMILLO  MAG JARAMILLO  */
+
+.magFaceBase{
+  position: absolute;
+  left: -108px;
+  top: -4.4px;
+  color: white;
+}
+.magFaceBase:after{
+  content: "porfafolio.magjaramillo.com";
+  position: absolute;
+  left: 0px;
+  top: 11px;
+  color: white;
+}
+.magOrejaDer{
+  position: absolute;
+  left: -116px;
+  top: 0.6px;
+  width: 207px;
+  height: 31px;
+  background: #FC004D;
+  border-radius: 5px;
+}
+.magOrejaIzq{
+  position: absolute;
+  left: -116px;
+  top: 0.6px;
+  width: 207px;
+  height: 31px;
+  border-radius: 5px;
+  box-shadow: 1px 0px 32px rgba(252,0,77,0.5);
+}
+.magFace{
+  position: absolute;
+  left: -116px;
+  top: 0.6px;
+  width: 207px;
+  height: 31px;
+  border-radius: 5px;
+  box-shadow: 1px 0px 32px rgba(252,215,21,0.5);
+}
+
+
+
+
+
+
+
+
+
+.animations{
+  position: absolute;
+  left: 207px;
+  top: 119px;
+}
+.rayo{
+    position: absolute;
+    display: none;
+    left:-200px;
+    top: -100px;
+    border-top:50px solid #FFF003;
+    border-left:12px solid transparent;
+    border-right: 25px solid transparent;
+    transform: rotate(-54deg);
+}
+.rayo:before{
+    content: "";
+    position: absolute;
+    left:-1px;
+    top:-88px;
+    border-bottom:50px solid #FFF003;
+    border-left:25px solid transparent;
+    border-right: 8px solid transparent;
+
+}
+.fuego{
+    position: absolute;
+    display: none;
+    left:-200px;
+    top: 65px;
+    width: 10px;
+    height: 37px;
+    background: #FF0000;
+    border-radius: 20px;
+
+}
+.fuego:before{
+    content: "";
+    position: absolute;
+    left:-13px;
+    top: 13px;
+    width: 37px;
+    height: 10px;
+    background: #FF0000;
+    border-radius: 20px;
+}
+.hierba{
+  position: absolute;
+  display: none;
+  left:-237px;
+  top: 17px;
+  width:11px;
+  height:23px;
+  border-top:-9px solid #24E97C;
+  border-left:26px solid #24E97C;
+  border-radius:30px 2px 0 1px;
+}
+.agua{
+    position: absolute;
+    display: none;
+    left:-170px;
+    top: -20px;
+    width: 14px;
+    height: 14px;
+    background: #00B4FF;
+    border-radius: 50%;
+}
+.mostrar{
+  display: block;
+}
+
+.opacity{
+  animation: opacity 2s infinite; 
+}
+.opacityb{
+  animation: opacity 3s infinite; 
+}
+.opacityc{
+  animation: opacity 20s infinite ; 
+}
+.moverc{
+  animation: movec 20s infinite ; 
+}
+
+ 
+
+@keyframes opacity{
+    0%{
+        opacity:0.0;
+    }    
+    1%{
+        opacity:1;
+    }
+    30%{
+        opacity:1;
+    }
+    60%{
+        opacity:1;
+    }
+    80%{
+        opacity:1;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+@keyframes movec{
+    0%{
+         transform: translate3d(0px,0px,0px) ease;
+    }    
+    3%{
+        transform: translate3d(-100px,0px,0px) ;
+    }
+  
+    100%{
+         transform: translate3d(-100px,0px,0px) ;
+    }
+}
+
+
+.flecha{
+  position: absolute;
+  left:-144px;
+  top: 252px;
+  border-top:62px solid #035CFF;
+  border-left:72px solid transparent;
+  border-right: 77px solid transparent;
+  transform: rotate(-122deg);
+}
+.flecha:before{
+  content: "";
+  position: absolute;
+  left:-38px;
+  top: -209px;
+  width: 78px;
+  height: 174px;
+  background: #035CFF;
+  border-radius: 10px;
+
+}
+.escoge{
+  position: absolute;
+  left:-215px;
+  top: 314px;
+  color:#FFFC00;
+  font-weight: bold;
+  transform: rotate(-31deg);
+}
+.choose{
+ animation: choose 1s infinite;
+}
+
+@keyframes choose{
+    0%{
+        transform: translate3d(0px,0px,0px) ease;
+    }
+    30%{
+        transform: translate3d(0px,0px,0px);
+    }
+    55%{
+        transform: translate3d(22px,-10px,0px);
+    }
+    70%{
+        transform: translate3d(0px,0px,0px);
+    }
+    100%{
+        transform: translate3d(0px,0px,0px)ease;
+    }
+}

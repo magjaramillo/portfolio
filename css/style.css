@@ -30,6 +30,9 @@
 .home--hover {
   color: #f05; }
 
+.trabajosm:active {
+  color: #7004ae; }
+
 /**{
   border: 1px solid red;
 }*/
@@ -1170,6 +1173,9 @@
   border: 2px solid #710970;
   left: 106px;
   top: 0px; }
+
+.active {
+  color: #461256 !important; }
 
 .nav {
   background: #E6E6E6;

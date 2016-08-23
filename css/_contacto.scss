@@ -1,0 +1,53 @@
+
+/**{
+  border: 1px solid red;
+}*/
+.about--all{
+  display: flex;
+  flex-wrap:wrap;
+
+  padding: 5em 3em;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.about--text{
+  color: black;
+  width: 50%;
+  padding: 0 3em;
+
+
+}
+.about--image{
+  color: black;
+  width: 40%;
+
+}
+.about--image-pic{
+  width:100%;
+  
+  border-radius:50%;
+
+}
+.about--image-round{
+  border-radius:50%;
+}
+.about--text-tittle{
+  color:#ababab;
+  font-size:40px ;
+  margin-bottom:30px;
+}
+.about--text-content{
+  color:#282828;
+  font-size:20px ;
+}
+
+.about--social{
+  margin-top:3em;
+  display:flex;
+  width: 100%;
+  padding:0 5em;
+}
+.facebook,.twitter,.instagram{
+  margin-right: 1em;
+}

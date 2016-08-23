@@ -1,9 +1,13 @@
 @import "head";
+@import "contacto";
 @import "astronauta";
 @import "planets";
 @import "vialactea";
 @import "trabajos";
 @import "skills";
+
+
+
 
 
 /*variables   signo $ mas nombre que le damos a la variable y luego el valor de la variable*/
@@ -51,7 +55,7 @@ $margin:2em;
     /*border: 1px solid red;*/
 }
 body{
-    background:$bg; 
+    background:$bg;
     font-family: 'Alegreya SC', serif;
     font-size: 16px;
     /*font-weight: bold;*/
@@ -79,7 +83,7 @@ h1{
     height: 100px;
     border-radius: 50%;
     border: 2px solid white;
-    margin: 0 auto; 
+    margin: 0 auto;
     overflow: hidden;
     position: relative;
     transition: all 0.5s ease;
@@ -115,7 +119,7 @@ h1{
     border: 0px solid #FFC000;
     left: -39px;
     top: 614px;
-    
+
 }
 .planet--back:before{
     content:"";
@@ -170,9 +174,10 @@ h1{
     color: #ECEAEA;
 }
 .redes{
-    padding: 1px 1px 1px 16px;
-    font-size: 16px;
+    padding: 1px 3px 1px 16px;
+    font-size: 18px;
     display: block;
+    margin-left: 8px;
     color: #FFFFFF;
 }
 .redes a:hover{
@@ -181,8 +186,9 @@ h1{
 .trabajos{
     padding: 1px 1px 1px 18px;
     font-size: 16px;
+    margin-left: -5px;
     color: #FFFFFF;
-    
+
 }
 .trabajos a:hover{
     color: #FFFFFF;
@@ -197,10 +203,10 @@ h1{
 .artboard{
     width: 800px;
     height: 679px;
-    background: transparent;  
+    background: transparent;
     /*box-shadow: 0px 3px 20px rgba(0,0,0,0.2);*/
     /*border:1px white solid;*/
-    border-radius: 3px; 
+    border-radius: 3px;
     margin:65px auto;
     position: relative;
     overflow: hidden
@@ -209,7 +215,7 @@ h1{
 .universe-two{
     position: absolute;
     top: -47px;
-    left: 61.1px; 
+    left: 61.1px;
 }
 .universe-two .stars .star{
     background: #A9EBFF ;
@@ -394,14 +400,14 @@ h1{
 
 
 #fire{
-    animation: fire 1.5s infinite; 
+    animation: fire 1.5s infinite;
     transition: all 0.2s;
 }
 
 @keyframes fire{
     0%{
         opacity:0.5;
-    }    
+    }
     20%{
         opacity:1;
     }
@@ -420,7 +426,7 @@ h1{
 }
 
 .astronauta{
-    animation: astronauta 3.5s infinite; 
+    animation: astronauta 3.5s infinite;
 }
 
 @keyframes astronauta{
@@ -442,7 +448,7 @@ h1{
 }
 
 #saturnrotate{
-    animation: saturnrotate 3.5s infinite; 
+    animation: saturnrotate 3.5s infinite;
 }
 
 @keyframes saturnrotate{
@@ -455,10 +461,10 @@ h1{
     100%{
         transform: rotate(-3deg);
     }
-    
+
 }
 .big:before{
-    animation: sun 2s infinite; 
+    animation: sun 2s infinite;
 }
 
 @keyframes sun{
@@ -471,12 +477,12 @@ h1{
     100%{
         opacity: 1;
     }
-    
+
 }
 
 
 /*.cosmos{
-    animation: cosmos 4s infinite; 
+    animation: cosmos 4s infinite;
 }
 
 @keyframes cosmos{
@@ -489,7 +495,7 @@ h1{
     100%{
         transform: rotateX(-20deg);
     }
-    
+
 }*/
 
 
@@ -575,11 +581,11 @@ h1{
 
 
 /*#saturnmove{
-    animation: saturnmove 3.5s infinite; 
+    animation: saturnmove 3.5s infinite;
     transition: all 0.2s;
 }
 @keyframes saturnmove{
-    
+
     0%{
         transform: translate3d(0px,0px,0px) ease;
     }
@@ -600,7 +606,7 @@ h1{
 
 
 #plutonrotate{
-    animation: plutonrotate 4s infinite; 
+    animation: plutonrotate 4s infinite;
 }
 
 @keyframes plutonrotate{
@@ -613,16 +619,16 @@ h1{
     100%{
         transform: rotate(-5deg);
     }
-    
+
 }
 
 
 #plutonmove{
-    animation: plutonmove 4s infinite; 
+    animation: plutonmove 4s infinite;
     transition: all 0.2s;
 }
 @keyframes plutonmove{
-    
+
     0%{
         transform: translate3d(0px,0px,0px) ease;
     }
@@ -642,7 +648,7 @@ h1{
 
 
 #marterotate{
-    animation: marterotate 3s infinite; 
+    animation: marterotate 3s infinite;
     transition: all 0.2s;
 }
 
@@ -656,16 +662,16 @@ h1{
     100%{
         transform: rotate(-2deg);
     }
-    
+
 }
 
 
 /*#martemove{
-    animation: martemove 3.6s infinite; 
+    animation: martemove 3.6s infinite;
     transition: all 0.2s;
 }
 @keyframes martemove{
-    
+
     0%{
         transform: translate3d(0px,0px,0px) ease;
     }
@@ -722,13 +728,13 @@ h1{
 
 /************************************************************/
 @media (max-width: 1561px){
-.section--trabajos{  
+.section--trabajos{
     width: 90%;
 }
 }
 @media (max-width: 1400px){
 .section--trabajos{
-    width: 70%; 
+    width: 70%;
 }
 }
 @media (max-width: 1560px){
@@ -744,7 +750,7 @@ h1{
     height: 27px;
     font-family: 'Raleway', sans-serif;
     font-size: 13px;
-    
+
 }
 .cont--skills{
     background: #2D2D2D;
@@ -773,7 +779,7 @@ h1{
 
 .webdesign img{
     width: 1.1em;
-    
+
 }
 .negocios{
     margin-bottom: 1em;
@@ -798,7 +804,7 @@ h1{
 }
 .programas-right div{
     margin: 5px 0px 8.4px 0px;
-}   
+}
 }
 /*************************************************************************/
 @media (max-width: 1280px){
@@ -817,10 +823,10 @@ h1{
     height: 87px;
     border-radius: 10px;
     transform: rotate(-45deg);
-    
+
 }
 .section--trabajos{
-    width: 78%; 
+    width: 78%;
 }
 .mag{
     width: 116px;
@@ -833,7 +839,7 @@ h1{
     width: 800px;
     height: 679px;
     margin:20px auto;
-    
+
 }
 .astronauta{
     width: 100px;
@@ -858,7 +864,7 @@ h1{
     top: -115px;
     left: 0px;
     transform: scale(1);
-    
+
 }
 .pluton--card{
     top: 51px;
@@ -876,14 +882,14 @@ h1{
     left: -52px;
     transform: rotate(0deg);
     transform: scale(1.2);
-    
+
 }
 .marte--card{
     top: 162px;
     left: -45px;
     transition: all 0.4s;
     transform: scale(1);
-    
+
 }
 .marte--planet-shadow{
     top: 63px;
@@ -934,7 +940,7 @@ h1{
 
 .webdesign img{
     width: 2.2em;
-    
+
 }
 .negocios{
     margin-bottom: 1em;
@@ -959,7 +965,7 @@ h1{
 }
 .programas-right div{
     margin: 5px 0px 8.4px 0px;
-}  
+}
 }
 /************************************************************/
 @media (max-width: 1100px){
@@ -1012,7 +1018,7 @@ h1{
     top: -115px;
     left: 0px;
     transform: scale(1);
-    
+
 }
 .pluton--card{
     top: 46px;
@@ -1030,14 +1036,14 @@ h1{
     left: -85px;
     transform: rotate(0deg);
     transform: scale(1.2);
-    
+
 }
 .marte--card{
     top: 188px;
     left: -75px;
     transition: all 0.4s;
     transform: scale(1);
-    
+
 }
 .marte--planet-shadow{
     top: 85px;
@@ -1053,7 +1059,7 @@ h1{
     height: 87px;
     border-radius: 10px;
     transform: rotate(45deg);
-    
+
 }
 .mag{
     width: 116px;
@@ -1092,7 +1098,7 @@ h1{
     top: -115px;
     left: 0px;
     transform: scale(1);
-    
+
 }
 .pluton--card{
     top: 46px;
@@ -1110,14 +1116,14 @@ h1{
     left: -85px;
     transform: rotate(0deg);
     transform: scale(1.2);
-    
+
 }
 .marte--card{
     top: 141px;
     left: -76px;
     transition: all 0.4s;
     transform: scale(1);
-    
+
 }
 .marte--planet-shadow{
     top: 37px;
@@ -1137,7 +1143,7 @@ h1{
     border-radius: 50%;
     border: 2px solid white;
     transform: rotate(45deg);
-  
+
 }
 .mini-cosmo{
     position: relative;
@@ -1171,7 +1177,7 @@ h1{
     height: 679px;
     top: 0px;
     left: -0px;
-   
+
 }
 .astronauta{
     width: 100px;
@@ -1196,7 +1202,7 @@ h1{
     top: -103px;
     left: -95px;
     transform: scale(1);
-    
+
 }
 .pluton--card{
     top: 46px;
@@ -1214,14 +1220,14 @@ h1{
     left: -206px;
     transform: rotate(0deg);
     transform: scale(1);
-    
+
 }
 .marte--card{
     top: 216px;
     left: -198px;
     transition: all 0.4s;
     transform: scale(1);
-    
+
 }
 .marte--planet-shadow{
     top: 122px;
@@ -1238,7 +1244,7 @@ h1{
     border-radius: 50%;
     border: 2px solid white;
     transform: rotate(45deg);
-  
+
 }
 .mini-cosmo{
     display: none;
@@ -1270,7 +1276,7 @@ h1{
     height: 679px;
     top: 0px;
     left: -0px;
-   
+
 }
 .astronauta{
     width: 100px;
@@ -1295,7 +1301,7 @@ h1{
     top: -103px;
     left: -95px;
     transform: scale(1);
-    
+
 }
 .pluton--card{
     top: 46px;
@@ -1313,14 +1319,14 @@ h1{
     left: -206px;
     transform: rotate(0deg);
     transform: scale(1);
-    
+
 }
 .marte--card{
     top: 216px;
     left: -198px;
     transition: all 0.4s;
     transform: scale(1);
-    
+
 }
 .marte--planet-shadow{
     top: 122px;
@@ -1339,7 +1345,7 @@ h1{
     height: 203px;
     top: 46%;
     left: 44%;
-    
+
 }
 .vialactea{
     left: 100px;
@@ -1362,7 +1368,7 @@ h1{
     top: 3px;
     left: -62px;
     transform: scale(1);
-    
+
 }
 .pluton--card{
     top: 165px;
@@ -1380,7 +1386,7 @@ h1{
     left: -220px;
     transform: rotate(0deg);
     transform: scale(1);
-    
+
 }
 .marte--card{
     top: 129px;
@@ -1433,7 +1439,7 @@ h1{
 
 .webdesign img{
     width: 1.1em;
-    
+
 }
 .negocios{
     margin-bottom: 1em;
@@ -1458,13 +1464,13 @@ h1{
 }
 .programas-right div{
     margin: 5px 0px 8.4px 0px;
-}  
+}
 }
 }
 /**********************************************************************/
 @media (max-width: 414px){
 .work{
-    transform: scale(0.9);    
+    transform: scale(0.9);
 }
 .astro{
     transform: scale(1);
@@ -1474,7 +1480,7 @@ h1{
     height: 203px;
     top: 46%;
     left: 20%;
-    
+
 }
 .vialactea{
     left: 60px;
@@ -1497,7 +1503,7 @@ h1{
     top: 3px;
     left: -185px;
     transform: scale(1);
-    
+
 }
 .pluton--card{
     top: 165px;
@@ -1515,7 +1521,7 @@ h1{
     left: -348px;
     transform: rotate(0deg);
     transform: scale(1);
-    
+
 }
 .marte--card{
     top: 95px;
@@ -1546,7 +1552,7 @@ h1{
     /*background: pink;*/
     top: 38%;
     left: 57%;
-    
+
 }
 .artboard{
     /*border:1px solid white;*/
@@ -1554,7 +1560,7 @@ h1{
     height: 679px;
     top: 0px;
     left: -0px;
-   
+
 }
 .saturn--planet{
     top: 250px;
@@ -1572,7 +1578,7 @@ h1{
     top: -80px;
     left: -242px;
     transform: scale(1.4);
-    
+
 }
 .pluton--card{
     top: 105px;
@@ -1590,7 +1596,7 @@ h1{
     left: -447px;
     transform: rotate(0deg);
     transform: scale(1);
-    
+
 }
 .marte--card{
     top: 553px;
@@ -1618,21 +1624,21 @@ h1{
     justify-content: space-around;
     transition: all 0.8s ease;
 
-} 
+}
 .work{
-    transform: scale(0.8);    
+    transform: scale(0.8);
 }
 }
 
 /*****************************************************************************/
 @media (max-width: 360px){
 .work{
-    transform: scale(0.7);    
+    transform: scale(0.7);
 }
 .artboard{
     width: 360px;
     height: 679px;
-   
+
 }
 
 .astro{
@@ -1654,7 +1660,7 @@ h1{
 .artboard{
     width: 320px;
     height: 679px;
-   
+
 }
 .astronauta{
     width: 100px;
@@ -1663,6 +1669,6 @@ h1{
     /*background: pink;*/
     top: 38%;
     left: 61%;
-    
+
 }
 }

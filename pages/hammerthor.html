@@ -10,7 +10,7 @@
 </head>
 <body class="hammerthor">
 
-    
+
 
     <header class="header header--trabajos">
         <div class="perfil--out">
@@ -23,9 +23,15 @@
     </header>
 
     <div class="nav nav-trabajos">
-        <a class="navegacion" href="../pages/trabajos.html">
+        <!-- <a class="navegacion" href="../pages/trabajos.html">
         <h1 class="trabajosm">Trabajos</h1>
-        </a>
+        </a> -->
+        <button class="trabajosm botonatras" onclick="goBack()">Atras</button>
+        <script>
+        function goBack() {
+            window.history.back();
+        }
+        </script>
         <a class="navegacion" href="../index.html">
         <h1 class="trabajosm">Inicio</h1>
         </a>
@@ -37,7 +43,7 @@
 
 
 
-    
+
     <div class="artboard">
         <div class="hammer">
 
@@ -83,8 +89,8 @@
                     </div>
                 </div>
                 <div class="shadow-handle"></div>
-                
-            </div> 
+
+            </div>
 
             <div class="border one">
                 <div class="line-base"></div>
@@ -101,7 +107,7 @@
             </div>
 
         </div>
-            
+
             <div id="line1" class="line1"></div>
             <div id="line2" class="line2"></div>
             <div id="line3" class="line3"></div>

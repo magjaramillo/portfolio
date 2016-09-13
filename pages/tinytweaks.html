@@ -21,9 +21,15 @@
     </header>
 
     <div class="nav nav-trabajos">
-        <a class="navegacion" href="../pages/trabajos.html">
+        <!-- <a class="navegacion" href="../pages/trabajos.html">
         <h1 class="trabajosm">Trabajos</h1>
-        </a>
+        </a> -->
+        <button class="trabajosm botonatras" onclick="goBack()">Atras</button>
+        <script>
+        function goBack() {
+            window.history.back();
+        }
+        </script>
         <a class="navegacion" href="../index.html">
         <h1 class="trabajosm">Inicio</h1>
         </a>
@@ -41,6 +47,6 @@
             Tiny Tweaks es un patrón sencillo, implementado en la mayoría de casos para hacer cambios pequeños en el contenido como el tamaño de la fuente, espaciado, colores etc
         </p>
     </section>
-    
+
 </body>
 </html>

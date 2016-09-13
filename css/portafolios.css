@@ -1,0 +1,134 @@
+
+
+
+body{
+    background: #eee;
+    font-family: 'Montserrat', sans-serif;
+    /*font-weight: bold;*/
+    color: #2a2a2a;
+    margin:0;
+}
+*{
+    box-sizing: border-box;
+    /*border: 1px solid red;*/
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    color: #2a2a2a;
+    font-weight:bold;
+    font-size: 32px;
+
+}
+p{
+  font-family: 'Open Sans', sans-serif;
+  color: #2a2a2a;
+}
+.header{
+    height: 120px;
+    width: 100%;
+    background: #000321;
+    border-bottom: 2px solid #D80FC3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.header--trabajos{
+    height: 120px;
+    width: 100%;
+    background: #290535;
+    border-bottom: 0px solid #B54E03;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+}
+
+.mag{
+      width: 99px;
+
+}
+
+.perfil{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+
+/******************************************************/
+
+
+.portafolio-container{
+  display:flex;
+  justify-content:center;
+}
+.portafolio-wrap{
+  width:70%;
+  height:100vh;
+  display:flex;
+  justify-content: space-around;
+
+
+}
+.portafolio-wrap--left{
+ width:20%;
+ height:100vh;
+ margin-top:10em;
+}
+.wrap-left--content{
+ font-family: 'Open Sans', sans-serif;
+ font-weight:bold;
+
+}
+.portafolio-right--imagea{
+  display:inline-block;
+  width:100%;
+}
+/*.portafolio-right--imageb{
+  display:inline-block;
+}*/
+
+ h2{
+   padding-top: 0;
+   margin-top: 0px;
+   font-weight:lighter;
+   font-size: 14px;
+   text-align:right;
+ }
+ h3{
+
+   margin-top: 2em;
+   font-weight:lighter;
+   font-size: 13px;
+   text-align:right;
+ }
+ h4{
+  align: right;
+  text-align:right;
+  margin-bottom: 3px;
+
+}
+.portafolio-wrap--right{
+  width:68%;
+  height:100vh;
+  margin-top:10em;
+}
+
+.icommmon{
+  text-align:right;
+
+}
+
+.portafolio-link{
+  color: #f05;
+}

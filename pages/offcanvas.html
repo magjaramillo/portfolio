@@ -21,9 +21,15 @@
     </header>
 
     <div class="nav nav-trabajos">
-        <a class="navegacion" href="../pages/trabajos.html">
+        <!-- <a class="navegacion" href="../pages/trabajos.html">
         <h1 class="trabajosm">Trabajos</h1>
-        </a>
+        </a> -->
+        <button class="trabajosm botonatras" onclick="goBack()">Atras</button>
+        <script>
+        function goBack() {
+            window.history.back();
+        }
+        </script>
         <a class="navegacion" href="../index.html">
         <h1 class="trabajosm">Inicio</h1>
         </a>
@@ -31,11 +37,11 @@
         <h1 class="trabajosm">Skills</h1>
         </a>
     </div>
-    
+
     <nav>
         <input type="checkbox" id="mostrarCanvas">
             <label for="mostrarCanvas">Press</label>
-            
+
             <div class="allCanvas">
 
                 <ul class="canvas">
@@ -45,8 +51,8 @@
                     <li><a href="#">Backend</a></li>
                     <li><a href="#">Cloud</a></li>
                 </ul>
-                
-            </div> 
+
+            </div>
 
     </nav>
 </body>
